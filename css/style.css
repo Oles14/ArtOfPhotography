@@ -1,0 +1,2670 @@
+
+
+:root {
+    --background: #F7F5EE;
+    --green: #243D30;
+    --accent: #71836A;
+    --brown: #795C46;
+    --sand: #C8AF91;
+    --text: #28352C;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: var(--background);
+    color: var(--text);
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 24px 6%;
+    background: var(--green);
+}
+
+.logo {
+    font-family: Georgia, serif;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+
+:root {
+    --background: #F7F5EE;
+    --green: #243D30;
+    --accent: #71836A;
+    --brown: #795C46;
+    --sand: #C8AF91;
+    --text: #28352C;
+    --card: #EEEDE5;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: var(--background);
+    color: var(--text);
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 24px 6%;
+    background: var(--green);
+}
+
+.logo {
+    font-family: Georgia, serif;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.nav a:hover {
+    color: #C5D4BB;
+}
+
+.hero {
+    min-height: 78vh;
+    display: flex;
+    align-items: center;
+    padding: 70px 8%;
+    background: linear-gradient(
+        120deg,
+        #E4E9DE,
+        #F7F5EE
+    );
+}
+
+.hero-wrapper {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 55px;
+}
+
+.hero-content {
+    flex: 1;
+    min-width: 0;
+    max-width: 680px;
+}
+
+.subtitle {
+    color: #60775C;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 12px;
+}
+
+.hero-quote {
+    font-family: Georgia, serif;
+    font-size: clamp(30px, 3.5vw, 48px);
+    line-height: 1.25;
+    font-weight: normal;
+    color: var(--green);
+    border-left: 4px solid var(--brown);
+    padding-left: 25px;
+    margin: 30px 0 12px;
+}
+
+.quote-author {
+    color: var(--brown);
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.hero-text {
+    color: #60775C;
+    font-size: 20px;
+    max-width: 530px;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 14px 28px;
+    background: var(--green);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background 0.2s;
+}
+
+.button:hover {
+    background: #41634D;
+}
+
+
+.hero-image {
+    flex: 0 1 450px;
+    min-width: 0;
+    transform: translateX(-30px);
+}
+
+
+.hero-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+
+    border-radius: 20px;
+    box-shadow: 0 12px 30px rgba(36, 61, 48, 0.22);
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.sections {
+    padding: 90px 0;
+}
+
+.section-heading {
+    font-family: Georgia, serif;
+    font-size: clamp(32px, 4vw, 48px);
+    color: var(--green);
+    margin: 8px 0 35px;
+}
+
+.sections-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.section-card {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    min-height: 260px;
+    background: var(--card);
+    border: 1px solid #DDDCCF;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.section-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(36, 61, 48, 0.1);
+}
+
+.card-number {
+    color: var(--brown);
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.section-card h3 {
+    font-family: Georgia, serif;
+    font-size: 24px;
+    line-height: 1.3;
+    color: var(--green);
+    margin: 18px 0 10px;
+}
+
+.section-card p {
+    font-size: 15px;
+    margin: 0 0 20px;
+}
+
+.card-link {
+    margin-top: auto;
+    color: var(--brown);
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.footer {
+    padding: 28px;
+    text-align: center;
+    background: var(--green);
+    color: white;
+}
+
+@media (max-width: 1000px) {
+    .sections-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero-wrapper {
+        gap: 30px;
+    }
+
+    .hero-image {
+        flex-basis: 300px;
+        transform: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero {
+        padding: 60px 7%;
+    }
+
+    .hero-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero-content {
+        width: 100%;
+    }
+
+    .hero-image {
+        width: 100%;
+        max-width: 340px;
+        flex-basis: auto;
+        align-self: center;
+    }
+
+    .hero-text {
+        font-size: 18px;
+    }
+
+    .sections {
+        padding: 65px 0;
+    }
+
+    .sections-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* ===== ИСТОРИЯ ФОТОГРАФИИ ===== */
+
+.history-intro {
+    padding: 85px 0 75px;
+    background: linear-gradient(120deg, #E4E9DE, #F7F5EE);
+}
+
+.history-intro h1 {
+    font-family: Georgia, serif;
+    font-size: clamp(40px, 6vw, 70px);
+    line-height: 1.15;
+    color: var(--green);
+    margin: 20px 0;
+}
+
+.history-lead {
+    max-width: 850px;
+    color: var(--text);
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+.history-navigation {
+    padding: 45px 0;
+    background: #E9EDE3;
+}
+
+.history-navigation h2 {
+    font-family: Georgia, serif;
+    font-size: 28px;
+    color: var(--green);
+    margin: 0 0 25px;
+}
+
+.history-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.history-menu a {
+    padding: 12px 18px;
+    background: var(--background);
+    border: 1px solid #C9D2C4;
+    border-radius: 8px;
+    color: var(--green);
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.history-menu a:hover {
+    background: var(--green);
+    color: white;
+}
+
+.history-content {
+    padding: 35px 0 90px;
+}
+
+.history-block {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 65px 0;
+    border-bottom: 1px solid #D4D9CE;
+    scroll-margin-top: 20px;
+}
+
+.history-heading {
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+    margin-bottom: 35px;
+}
+
+.history-number {
+    font-family: Georgia, serif;
+    font-size: 46px;
+    color: var(--brown);
+    line-height: 1;
+}
+
+.history-heading h2 {
+    font-family: Georgia, serif;
+    font-size: clamp(28px, 4vw, 42px);
+    line-height: 1.2;
+    color: var(--green);
+    margin: 8px 0;
+}
+
+.history-block > p {
+    font-size: 17px;
+    line-height: 1.9;
+    margin: 0 0 22px;
+}
+
+
+
+.history-figure {
+    margin: 35px 0 65px;
+}
+
+.history-figure figcaption {
+    margin-top: 12px;
+    color: var(--brown);
+    font-size: 14px;
+    text-align: center;
+}
+
+
+.history-photo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    padding-bottom: 35px;
+    border: none;
+    background: transparent;
+    min-height: 0;
+}
+
+.history-photo img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 14px;
+}
+
+.history-images {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+    max-width: 900px;
+    margin: 40px auto 65px;
+    align-items: start;
+}
+
+.history-small-figure img {
+    display: block;
+    width: 100%;
+    height: 330px;
+    object-fit: contain;
+    border-radius: 12px;
+}
+
+
+.history-small-figure img {
+    display: block;
+    width: 100%;
+    height: 260px;
+    object-fit: contain;
+    border-radius: 12px;
+}
+
+.history-small-figure figcaption {
+    margin-top: 12px;
+    font-size: 14px;
+    color: var(--brown);
+    text-align: center;
+}
+
+
+.history-next {
+    margin-top: 60px;
+    padding: 40px;
+    background: #E7EBDD;
+    border-radius: 14px;
+}
+
+.history-next h3 {
+    font-family: Georgia, serif;
+    font-size: 30px;
+    color: var(--green);
+    margin: 12px 0;
+}
+
+@media (max-width: 768px) {
+    .history-intro {
+        padding: 55px 0;
+    }
+
+    .history-lead {
+        font-size: 17px;
+    }
+
+    .history-heading {
+        gap: 15px;
+    }
+
+    .history-number {
+        font-size: 34px;
+    }
+
+    .history-block {
+        padding: 45px 0;
+    }
+
+    .history-block > p {
+        font-size: 16px;
+    }
+
+    .history-images {
+        grid-template-columns: 1fr;
+    }
+
+    .history-next {
+        padding: 25px;
+    }
+}
+
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+    color: var(--green);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.back-link span {
+    font-size: 26px;
+    transition: transform 0.2s;
+}
+
+.back-link:hover {
+    color: var(--brown);
+}
+
+.back-link:hover span {
+    transform: translateX(-5px);
+}
+
+
+/* ===== ПРОСМОТРЩИК ФОТОГРАФИЙ ===== */
+
+.lightbox-trigger {
+    cursor: zoom-in;
+}
+
+.lightbox-trigger:focus-visible {
+    outline: 3px solid var(--brown);
+    outline-offset: 4px;
+}
+
+/* Затемнение страницы */
+.lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background: rgba(18, 28, 22, 0.96);
+
+    align-items: center;
+    justify-content: center;
+    padding: 65px 70px;
+}
+
+.lightbox.active {
+    display: flex;
+}
+
+body.lightbox-open {
+    overflow: hidden;
+}
+
+/* Центральная часть */
+.lightbox-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 0;
+}
+
+.lightbox-image {
+    display: block;
+    max-width: 100%;
+    max-height: 72vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+    box-shadow: 0 12px 45px rgba(0, 0, 0, 0.4);
+}
+
+/* Подпись */
+.lightbox-caption {
+    margin: 18px 0 5px;
+    color: #F7F5EE;
+    font-size: 16px;
+    text-align: center;
+}
+
+.lightbox-counter {
+    margin: 0;
+    color: #C8AF91;
+    font-size: 14px;
+}
+
+/* Общий стиль кнопок */
+.lightbox-close,
+.lightbox-prev,
+.lightbox-next {
+    position: absolute;
+    border: none;
+    background: rgba(247, 245, 238, 0.12);
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+}
+
+.lightbox-close:hover,
+.lightbox-prev:hover,
+.lightbox-next:hover {
+    background: rgba(247, 245, 238, 0.28);
+}
+
+/* Крестик справа сверху */
+.lightbox-close {
+    top: 22px;
+    right: 28px;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    font-size: 32px;
+    z-index: 2;
+}
+
+/* Стрелки */
+.lightbox-prev,
+.lightbox-next {
+    top: 50%;
+    transform: translateY(-50%);
+    width: 45px;
+    height: 55px;
+    border-radius: 10px;
+    font-size: 24px;
+}
+
+.lightbox-prev {
+    left: 18px;
+}
+
+.lightbox-next {
+    right: 18px;
+}
+
+.lightbox-prev[hidden],
+.lightbox-next[hidden] {
+    display: none;
+}
+
+/* Телефоны */
+@media (max-width: 768px) {
+    .lightbox {
+        padding: 70px 45px;
+    }
+
+    .lightbox-image {
+        max-height: 65vh;
+    }
+
+    .lightbox-close {
+        top: 15px;
+        right: 15px;
+    }
+
+    .lightbox-prev {
+        left: 3px;
+    }
+
+    .lightbox-next {
+        right: 3px;
+    }
+
+    .lightbox-caption {
+        font-size: 14px;
+    }
+}
+
+
+/* ======================================
+   СТРАНИЦА «ЖАНРЫ ФОТОГРАФИИ»
+====================================== */
+
+/* Вступление */
+
+.genres-intro {
+    padding: 65px 0 75px;
+    background: linear-gradient(120deg, #E4E9DE, #F7F5EE);
+}
+
+.genres-intro h1 {
+    font-family: Georgia, serif;
+    font-size: clamp(40px, 5vw, 64px);
+    line-height: 1.2;
+    color: var(--green);
+    margin: 15px 0 35px;
+}
+
+/* Цитата */
+
+.genres-quote {
+    max-width: 850px;
+    margin: 0;
+    padding: 25px 30px;
+    border-left: 4px solid var(--brown);
+    border-radius: 0 12px 12px 0;
+    background: rgba(255, 255, 255, 0.4);
+    font-family: Georgia, serif;
+    font-size: 19px;
+    font-style: italic;
+    line-height: 1.8;
+    color: var(--green);
+}
+
+.genres-quote cite {
+    display: block;
+    margin-top: 15px;
+    font-size: 15px;
+    color: var(--brown);
+}
+
+/* Основной раздел */
+
+.genres-section {
+    padding: 75px 0 90px;
+}
+
+.genres-heading {
+    font-family: Georgia, serif;
+    font-size: 38px;
+    color: var(--green);
+    margin: 0 0 15px;
+}
+
+.genres-section > .container > p {
+    max-width: 850px;
+    margin-bottom: 30px;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+/* Фильтры */
+
+.genre-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 30px 0 15px;
+}
+
+.genre-filter {
+    padding: 12px 20px;
+    border: 1px solid #BEC9B8;
+    border-radius: 30px;
+    background: #E7EBDD;
+    color: var(--green);
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.genre-filter:hover {
+    background: #CCD8C5;
+}
+
+.genre-filter.active {
+    background: var(--green);
+    color: white;
+    border-color: var(--green);
+}
+
+.genre-count {
+    margin: 0 0 30px;
+    color: var(--brown);
+    font-size: 14px;
+}
+
+/* Сетка карточек */
+
+.genres-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
+    align-items: start;
+}
+
+/* Карточки */
+
+.genre-card {
+    min-width: 0;
+    overflow: hidden;
+    background: #EEEDE5;
+    border: 1px solid #DDDCCF;
+    border-radius: 16px;
+    transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.genre-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(36, 61, 48, 0.12);
+}
+
+/* Не показываем отфильтрованные карточки */
+
+.genre-card[hidden] {
+    display: none;
+}
+
+/* Фотографии */
+
+.genre-image {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    background: #DDE3D7;
+}
+
+.genre-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.35s;
+}
+
+.genre-card:hover .genre-image img {
+    transform: scale(1.035);
+}
+
+/* Заглушка при отсутствии изображения */
+
+.genre-image.missing-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.genre-image.missing-image::after {
+    content: "Фотография будет добавлена";
+    color: #60775C;
+    font-family: Georgia, serif;
+    font-style: italic;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Текст карточек */
+
+.genre-info {
+    padding: 28px 30px 32px;
+}
+
+.genre-number {
+    color: var(--brown);
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.genre-info h3 {
+    font-family: Georgia, serif;
+    color: var(--green);
+    font-size: 26px;
+    line-height: 1.3;
+    margin: 12px 0 22px;
+}
+
+.genre-info p {
+    font-size: 15px;
+    line-height: 1.85;
+    margin: 0 0 18px;
+}
+
+.genre-info p:last-child {
+    margin-bottom: 0;
+}
+
+/* Переход к следующей странице */
+
+.genres-next {
+    margin-top: 70px;
+    padding: 45px;
+    background: #E7EBDD;
+    border-radius: 16px;
+}
+
+.genres-next h2 {
+    font-family: Georgia, serif;
+    font-size: 32px;
+    color: var(--green);
+    margin: 12px 0;
+}
+
+/* Адаптация */
+
+@media (max-width: 768px) {
+
+    .genres-intro {
+        padding: 45px 0 55px;
+    }
+
+    .genres-quote {
+        padding: 20px;
+        font-size: 17px;
+    }
+
+    .genres-section {
+        padding: 55px 0;
+    }
+
+    .genres-heading {
+        font-size: 30px;
+    }
+
+    .genres-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .genre-info {
+        padding: 24px;
+    }
+
+    .genre-info h3 {
+        font-size: 24px;
+    }
+
+    .genres-next {
+        padding: 28px;
+    }
+
+    .genres-next h2 {
+        font-size: 26px;
+    }
+}
+
+
+/* =====================================
+   СТРАНИЦА «СВЕТ И ЦВЕТ»
+===================================== */
+
+/* Вступление */
+
+.light-intro {
+    padding: 65px 0 75px;
+    background: linear-gradient(120deg, #E4E9DE, #F7F5EE);
+}
+
+.light-intro h1 {
+    font-family: Georgia, serif;
+    font-size: clamp(40px, 5vw, 65px);
+    line-height: 1.2;
+    color: var(--green);
+    margin: 15px 0 30px;
+}
+
+.light-quote {
+    max-width: 850px;
+    margin: 0;
+    padding: 25px 30px;
+    border-left: 4px solid var(--brown);
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 0 12px 12px 0;
+    font-family: Georgia, serif;
+    font-size: 21px;
+    font-style: italic;
+    color: var(--green);
+}
+
+.light-quote cite {
+    display: block;
+    margin-top: 15px;
+    font-size: 15px;
+    color: var(--brown);
+}
+
+.light-lead {
+    max-width: 850px;
+    margin: 35px 0 0;
+    font-size: 19px;
+    line-height: 1.8;
+}
+
+/* Внутренняя навигация */
+
+.light-navigation {
+    padding: 40px 0;
+    background: #E9EDE3;
+}
+
+.light-navigation h2 {
+    font-family: Georgia, serif;
+    font-size: 27px;
+    color: var(--green);
+    margin: 0 0 25px;
+}
+
+.light-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.light-menu a {
+    padding: 12px 18px;
+    background: var(--background);
+    border: 1px solid #C9D2C4;
+    border-radius: 25px;
+    color: var(--green);
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.light-menu a:hover {
+    background: var(--green);
+    color: white;
+}
+
+/* Основное содержимое */
+
+.light-content {
+    padding: 60px 0 90px;
+}
+
+.light-content > .container {
+    max-width: 1100px;
+}
+
+/* Заголовки частей */
+
+.light-chapter {
+    padding: 40px;
+    margin: 20px 0 30px;
+    background: #E7EBDD;
+    border-radius: 16px;
+}
+
+.light-chapter-label {
+    color: var(--brown);
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.light-chapter h2 {
+    font-family: Georgia, serif;
+    color: var(--green);
+    font-size: 48px;
+    margin: 10px 0;
+}
+
+.light-chapter p {
+    max-width: 750px;
+    margin: 0;
+    font-size: 17px;
+}
+
+.light-color-chapter {
+    margin-top: 85px;
+    background: #EBE5DA;
+}
+
+/* Статьи */
+
+.light-block {
+    padding: 60px 0;
+    border-bottom: 1px solid #D4D9CE;
+    scroll-margin-top: 25px;
+}
+
+.light-block-heading {
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.light-number {
+    font-family: Georgia, serif;
+    font-size: 46px;
+    color: var(--brown);
+    line-height: 1.15;
+}
+
+.light-block-heading h2 {
+    font-family: Georgia, serif;
+    font-size: clamp(28px, 3.5vw, 40px);
+    color: var(--green);
+    line-height: 1.25;
+    margin: 0;
+}
+
+.light-block > p {
+    max-width: 950px;
+    font-size: 17px;
+    line-height: 1.9;
+    margin: 0 0 22px;
+}
+
+/* Фотографии */
+
+.light-photo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+    margin: 40px 0 60px;
+    align-items: start;
+}
+
+.light-photo-grid-three {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.light-photo-card {
+    margin: 0;
+    min-width: 0;
+    overflow: hidden;
+    background: #EEEDE5;
+    border: 1px solid #DDDCCF;
+    border-radius: 14px;
+}
+
+.light-image {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    background: #DCE3D7;
+}
+
+.light-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: zoom-in;
+    transition: transform 0.3s;
+}
+
+.light-image img:hover {
+    transform: scale(1.035);
+}
+
+.light-photo-card figcaption {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 17px 20px;
+    font-size: 15px;
+    color: var(--brown);
+    text-align: center;
+}
+
+.light-photo-card figcaption strong {
+    color: var(--green);
+    font-size: 17px;
+}
+
+.light-photo-card figcaption span {
+    font-size: 13px;
+}
+
+.light-wide-figure {
+    max-width: 800px;
+    margin: 40px auto 60px;
+}
+
+.light-wide-figure .light-image {
+    border-radius: 14px;
+}
+
+.light-wide-figure figcaption {
+    margin-top: 12px;
+    text-align: center;
+    font-size: 14px;
+    color: var(--brown);
+}
+
+/* Заглушка для отсутствующих фотографий */
+
+.light-image.is-missing {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.light-image.is-missing::after {
+    content: "Место для фотографии";
+    font-family: Georgia, serif;
+    font-style: italic;
+    color: #60775C;
+    text-align: center;
+    padding: 20px;
+}
+
+.light-image.is-missing img {
+    display: none;
+}
+
+/* Направления света */
+
+.light-info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    margin: 35px 0 45px;
+}
+
+.light-info-card {
+    padding: 28px;
+    background: #EEEDE5;
+    border-radius: 12px;
+    border: 1px solid #DDDCCF;
+}
+
+.light-info-card > span {
+    font-size: 13px;
+    color: var(--brown);
+    letter-spacing: 2px;
+}
+
+.light-info-card h3 {
+    font-family: Georgia, serif;
+    font-size: 24px;
+    color: var(--green);
+    margin: 12px 0;
+}
+
+.light-info-card p {
+    font-size: 15px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+/* Интерактивная цветовая гармония */
+
+.harmony-demo {
+    margin: 40px 0;
+    padding: 35px;
+    background: #E9EDE3;
+    border-radius: 16px;
+}
+
+.harmony-demo h3 {
+    font-family: Georgia, serif;
+    font-size: 29px;
+    color: var(--green);
+    margin: 0 0 12px;
+}
+
+.harmony-demo > p {
+    font-size: 16px;
+}
+
+.harmony-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 25px 0;
+}
+
+.harmony-button {
+    padding: 11px 17px;
+    border: 1px solid #B9C7B1;
+    border-radius: 25px;
+    background: #F7F5EE;
+    color: var(--green);
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.harmony-button:hover {
+    background: #D4DEC9;
+}
+
+.harmony-button.active {
+    background: var(--green);
+    color: white;
+    border-color: var(--green);
+}
+
+.harmony-palette {
+    display: flex;
+    gap: 8px;
+    min-height: 120px;
+}
+
+.harmony-swatch {
+    flex: 1;
+    border-radius: 10px;
+    min-width: 0;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.harmony-description {
+    margin-top: 18px;
+    color: var(--text);
+}
+
+/* Описания гармоний */
+
+.light-harmony-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    margin: 35px 0;
+}
+
+.light-harmony-item {
+    padding: 27px;
+    background: #EEEDE5;
+    border-radius: 12px;
+    border-left: 4px solid var(--brown);
+}
+
+.light-harmony-item h3 {
+    font-family: Georgia, serif;
+    color: var(--green);
+    font-size: 23px;
+    margin: 0 0 15px;
+}
+
+.light-harmony-item p {
+    font-size: 15px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+/* Следующая страница */
+
+.light-next {
+    margin-top: 65px;
+    padding: 40px;
+    background: #E7EBDD;
+    border-radius: 14px;
+}
+
+.light-next h2 {
+    font-family: Georgia, serif;
+    font-size: 30px;
+    color: var(--green);
+    margin: 12px 0;
+}
+
+/* Адаптивность */
+
+@media (max-width: 768px) {
+
+    .light-intro {
+        padding: 45px 0 55px;
+    }
+
+    .light-quote {
+        padding: 20px;
+        font-size: 18px;
+    }
+
+    .light-lead {
+        font-size: 17px;
+    }
+
+    .light-content {
+        padding: 40px 0 65px;
+    }
+
+    .light-chapter {
+        padding: 25px;
+    }
+
+    .light-chapter h2 {
+        font-size: 37px;
+    }
+
+    .light-block {
+        padding: 45px 0;
+    }
+
+    .light-block-heading {
+        gap: 15px;
+    }
+
+    .light-number {
+        font-size: 34px;
+    }
+
+    .light-block > p {
+        font-size: 16px;
+    }
+
+    .light-photo-grid,
+    .light-photo-grid-three,
+    .light-info-grid,
+    .light-harmony-list {
+        grid-template-columns: 1fr;
+    }
+
+    .harmony-demo {
+        padding: 23px;
+    }
+
+    .harmony-demo h3 {
+        font-size: 24px;
+    }
+
+    .harmony-palette {
+        min-height: 85px;
+    }
+
+    .light-next {
+        padding: 27px;
+    }
+
+    .light-next h2 {
+        font-size: 25px;
+    }
+}
+
+
+/* =====================================
+   СТРАНИЦА «КОМПОЗИЦИЯ»
+===================================== */
+
+/* Вступление */
+
+.composition-intro {
+    padding: 65px 0 75px;
+    background: linear-gradient(120deg, #E4E9DE, #F7F5EE);
+}
+
+.composition-intro h1 {
+    font-family: Georgia, serif;
+    font-size: clamp(40px, 5vw, 65px);
+    line-height: 1.2;
+    color: var(--green);
+    margin: 15px 0 30px;
+}
+
+.composition-lead {
+    max-width: 850px;
+    font-size: 19px;
+    line-height: 1.8;
+    margin: 0 0 30px;
+}
+
+.composition-quote {
+    max-width: 850px;
+    padding: 25px 30px;
+    border-left: 4px solid var(--brown);
+    border-radius: 0 12px 12px 0;
+    background: rgba(255, 255, 255, 0.4);
+    font-family: Georgia, serif;
+    font-size: 22px;
+    font-style: italic;
+    color: var(--green);
+}
+
+/* Внутренняя навигация */
+
+.composition-navigation {
+    padding: 45px 0;
+    background: #E9EDE3;
+}
+
+.composition-navigation h2 {
+    font-family: Georgia, serif;
+    font-size: 28px;
+    color: var(--green);
+    margin: 0 0 25px;
+}
+
+.composition-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.composition-menu a {
+    padding: 11px 17px;
+    border: 1px solid #C9D2C4;
+    border-radius: 25px;
+    background: var(--background);
+    color: var(--green);
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.composition-menu a:hover {
+    background: var(--green);
+    color: white;
+}
+
+/* Основное содержимое */
+
+.composition-content {
+    padding: 35px 0 95px;
+}
+
+.composition-content > .container {
+    max-width: 1100px;
+}
+
+.composition-block {
+    padding: 65px 0;
+    border-bottom: 1px solid #D4D9CE;
+    scroll-margin-top: 25px;
+}
+
+.composition-heading {
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.composition-number {
+    font-family: Georgia, serif;
+    font-size: 46px;
+    line-height: 1;
+    color: var(--brown);
+}
+
+.composition-heading h2 {
+    font-family: Georgia, serif;
+    font-size: clamp(28px, 3.5vw, 40px);
+    line-height: 1.25;
+    color: var(--green);
+    margin: 0;
+}
+
+.composition-block > p {
+    max-width: 950px;
+    font-size: 17px;
+    line-height: 1.9;
+    margin: 0 0 22px;
+}
+
+/* Одиночные фотографии */
+
+.composition-figure {
+    margin: 40px auto 65px;
+    max-width: 850px;
+    min-width: 0;
+    text-align: center;
+}
+
+.composition-figure img {
+    display: block;
+    width: 100%;
+    max-height: 550px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 14px;
+    cursor: zoom-in;
+    transition: filter 0.2s;
+}
+
+.composition-figure img:hover {
+    filter: brightness(0.96);
+}
+
+.composition-figure figcaption {
+    margin-top: 13px;
+    color: var(--brown);
+    font-size: 14px;
+}
+
+/* Несколько фотографий рядом */
+
+.composition-photo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+    margin: 40px 0 65px;
+    align-items: start;
+}
+
+.composition-photo-grid .composition-figure {
+    width: 100%;
+    margin: 0;
+}
+
+.composition-photo-grid img {
+    width: 100%;
+    height: 300px;
+    max-height: none;
+    object-fit: contain;
+}
+
+/* Интерактивная сетка */
+
+.thirds-demo {
+    margin: 40px 0 65px;
+    padding: 35px;
+    background: #E7EBDD;
+    border-radius: 16px;
+}
+
+.thirds-demo h3 {
+    font-family: Georgia, serif;
+    color: var(--green);
+    font-size: 29px;
+    margin: 0 0 12px;
+}
+
+.thirds-demo > p {
+    line-height: 1.8;
+}
+
+.thirds-photo {
+    position: relative;
+    width: 100%;
+    max-width: 850px;
+    margin: 25px auto;
+    overflow: hidden;
+    border-radius: 14px;
+    background: #DCE3D7;
+}
+
+.thirds-photo img {
+    display: block;
+    width: 100%;
+    height: auto;
+    cursor: zoom-in;
+}
+
+/* Линии правила третей */
+
+.thirds-overlay {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.25s;
+
+    background-image:
+        linear-gradient(
+            to right,
+            transparent calc(33.333% - 1px),
+            rgba(255,255,255,0.95) 33.333%,
+            transparent calc(33.333% + 1px),
+            transparent calc(66.666% - 1px),
+            rgba(255,255,255,0.95) 66.666%,
+            transparent calc(66.666% + 1px)
+        ),
+        linear-gradient(
+            to bottom,
+            transparent calc(33.333% - 1px),
+            rgba(255,255,255,0.95) 33.333%,
+            transparent calc(33.333% + 1px),
+            transparent calc(66.666% - 1px),
+            rgba(255,255,255,0.95) 66.666%,
+            transparent calc(66.666% + 1px)
+        );
+}
+
+.thirds-overlay.visible {
+    opacity: 1;
+}
+
+/* Кнопка управления */
+
+.composition-button {
+    display: inline-block;
+    padding: 13px 25px;
+    background: var(--green);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.composition-button:hover {
+    background: #41634D;
+}
+
+.thirds-hint {
+    color: #60775C;
+    font-size: 14px;
+    margin-top: 18px;
+}
+
+/* Переход в галерею */
+
+.composition-next {
+    margin-top: 65px;
+    padding: 40px;
+    background: #E7EBDD;
+    border-radius: 14px;
+}
+
+.composition-next h2 {
+    font-family: Georgia, serif;
+    font-size: 30px;
+    color: var(--green);
+    margin: 12px 0;
+}
+
+/* Адаптация */
+
+@media (max-width: 768px) {
+
+    .composition-intro {
+        padding: 45px 0 55px;
+    }
+
+    .composition-lead {
+        font-size: 17px;
+    }
+
+    .composition-quote {
+        padding: 20px;
+        font-size: 18px;
+    }
+
+    .composition-content {
+        padding: 25px 0 65px;
+    }
+
+    .composition-block {
+        padding: 45px 0;
+    }
+
+    .composition-heading {
+        gap: 15px;
+    }
+
+    .composition-number {
+        font-size: 34px;
+    }
+
+    .composition-block > p {
+        font-size: 16px;
+    }
+
+    .composition-photo-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .composition-photo-grid img {
+        height: auto;
+        max-height: 380px;
+    }
+
+    .thirds-demo {
+        padding: 20px;
+    }
+
+    .thirds-demo h3 {
+        font-size: 24px;
+    }
+
+    .composition-next {
+        padding: 27px;
+    }
+
+    .composition-next h2 {
+        font-size: 25px;
+    }
+}
+
+
+/* =====================================
+   СТРАНИЦА «ФОТОГАЛЕРЕЯ»
+===================================== */
+
+/* Вступление */
+
+.gallery-intro {
+    padding: 65px 0 80px;
+    background: linear-gradient(
+        120deg,
+        #E4E9DE,
+        #F7F5EE
+    );
+}
+
+.gallery-intro h1 {
+    font-family: Georgia, serif;
+    font-size: clamp(42px, 5vw, 68px);
+    line-height: 1.2;
+    color: var(--green);
+    margin: 15px 0 28px;
+}
+
+.gallery-lead {
+    max-width: 850px;
+    font-family: Georgia, serif;
+    font-size: 25px;
+    line-height: 1.6;
+    color: var(--green);
+    margin: 0 0 24px;
+}
+
+.gallery-description {
+    max-width: 750px;
+    font-size: 17px;
+    line-height: 1.8;
+    color: var(--text);
+}
+
+/* Основной раздел */
+
+.gallery-section {
+    padding: 75px 0 95px;
+}
+
+.gallery-heading {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.gallery-heading h2 {
+    font-family: Georgia, serif;
+    font-size: clamp(30px, 4vw, 43px);
+    color: var(--green);
+    margin: 8px 0 0;
+}
+
+.gallery-total {
+    font-size: 14px;
+    color: var(--brown);
+}
+
+/* Кнопки фильтрации */
+
+.gallery-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 38px;
+}
+
+.gallery-filter {
+    padding: 12px 20px;
+    border: 1px solid #BCC8B5;
+    border-radius: 30px;
+    background: #E7EBDD;
+    color: var(--green);
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.gallery-filter:hover {
+    background: #D1DDC9;
+}
+
+.gallery-filter.active {
+    background: var(--green);
+    color: white;
+    border-color: var(--green);
+}
+
+/* Мозаика */
+
+.gallery-mosaic {
+    columns: 3;
+    column-gap: 20px;
+}
+
+/* Карточка фотографии */
+
+.gallery-card {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin: 0 0 20px;
+
+    break-inside: avoid;
+    -webkit-column-break-inside: avoid;
+
+    overflow: hidden;
+    border-radius: 14px;
+    background: #E6E8DE;
+
+    transition: box-shadow 0.25s;
+}
+
+.gallery-card:hover {
+    box-shadow: 0 10px 30px rgba(36, 61, 48, 0.18);
+}
+
+.gallery-card[hidden] {
+    display: none !important;
+}
+
+/* Сохраняем естественные пропорции */
+
+.gallery-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+    cursor: zoom-in;
+    transition: transform 0.35s, filter 0.35s;
+}
+
+.gallery-card:hover img {
+    transform: scale(1.035);
+    filter: brightness(0.9);
+}
+
+/* Подпись внизу изображения */
+
+.gallery-card figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    padding: 45px 20px 20px;
+
+    background: linear-gradient(
+        to top,
+        rgba(20, 35, 25, 0.85),
+        transparent
+    );
+
+    color: white;
+
+    opacity: 0;
+    transform: translateY(8px);
+    transition: opacity 0.25s, transform 0.25s;
+    pointer-events: none;
+}
+
+.gallery-card:hover figcaption,
+.gallery-card:focus-within figcaption {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.gallery-card figcaption strong {
+    font-family: Georgia, serif;
+    font-size: 20px;
+}
+
+.gallery-card figcaption span {
+    font-size: 13px;
+    color: #D4E1CE;
+}
+
+/* Пустое место, если фото ещё не загружено */
+
+.gallery-card.missing-photo {
+    min-height: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px dashed #B6C4AE;
+    background: #E7EBDD;
+}
+
+.gallery-card.missing-photo img {
+    display: none;
+}
+
+.gallery-card.missing-photo::before {
+    content: "Место для фотографии";
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 16px;
+    color: #60775C;
+    text-align: center;
+    padding: 20px;
+}
+
+.gallery-card.missing-photo figcaption {
+    display: none;
+}
+
+/* Переход к разделу композиции */
+
+.gallery-next {
+    margin-top: 75px;
+    padding: 45px;
+    border-radius: 16px;
+    background: #E7EBDD;
+}
+
+.gallery-next h2 {
+    font-family: Georgia, serif;
+    font-size: clamp(25px, 3vw, 34px);
+    color: var(--green);
+    margin: 12px 0;
+}
+
+.gallery-next > p:not(.subtitle) {
+    max-width: 650px;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* Планшеты */
+
+@media (max-width: 1000px) {
+    .gallery-mosaic {
+        columns: 2;
+    }
+}
+
+/* Телефоны */
+
+@media (max-width: 600px) {
+
+    .gallery-intro {
+        padding: 45px 0 55px;
+    }
+
+    .gallery-lead {
+        font-size: 21px;
+    }
+
+    .gallery-section {
+        padding: 50px 0 65px;
+    }
+
+    .gallery-mosaic {
+        columns: 1;
+    }
+
+    .gallery-filters {
+        gap: 8px;
+    }
+
+    .gallery-filter {
+        padding: 10px 15px;
+        font-size: 13px;
+    }
+
+    .gallery-card {
+        margin-bottom: 17px;
+    }
+
+    /* На телефоне подписи видны постоянно */
+
+    .gallery-card figcaption {
+        opacity: 1;
+        transform: none;
+    }
+
+    .gallery-next {
+        padding: 27px;
+        margin-top: 55px;
+    }
+}
+
+
+/* =====================================
+   СТРАНИЦА «УСТРОЙСТВО КАМЕРЫ»
+===================================== */
+
+.camera-intro {
+    padding: 65px 0 75px;
+    background: linear-gradient(120deg, #E4E9DE, #F7F5EE);
+}
+
+.camera-intro h1 {
+    font-family: Georgia, serif;
+    color: var(--green);
+    font-size: clamp(40px, 5vw, 65px);
+    line-height: 1.2;
+    margin: 15px 0 30px;
+}
+
+.camera-lead,
+.camera-section-lead {
+    max-width: 900px;
+    font-size: 18px;
+    line-height: 1.85;
+    margin: 0 0 35px;
+}
+
+.camera-section-title {
+    font-family: Georgia, serif;
+    color: var(--green);
+    font-size: clamp(30px, 4vw, 43px);
+    line-height: 1.25;
+    margin: 10px 0 25px;
+}
+
+/* Внутреннее меню */
+
+.camera-navigation {
+    padding: 30px 0;
+    background: #E9EDE3;
+}
+
+.camera-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.camera-menu a {
+    padding: 12px 18px;
+    background: var(--background);
+    color: var(--green);
+    border: 1px solid #C9D2C4;
+    border-radius: 25px;
+    font-size: 14px;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.camera-menu a:hover {
+    background: var(--green);
+    color: white;
+}
+
+/* Основная схема */
+
+.camera-section,
+.exposure-section,
+.camera-simulator-section,
+.camera-settings-section {
+    padding: 75px 0 90px;
+    scroll-margin-top: 20px;
+}
+
+.exposure-section {
+    background: #E9EDE3;
+}
+
+.camera-simulator-section {
+    background: var(--background);
+}
+
+.camera-settings-section {
+    background: #F1EFE7;
+}
+
+.camera-view-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.camera-view-button {
+    padding: 12px 20px;
+    background: #E7EBDD;
+    color: var(--green);
+    border: 1px solid #BCC8B5;
+    border-radius: 25px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.camera-view-button.active,
+.camera-view-button:hover {
+    background: var(--green);
+    color: white;
+}
+
+.camera-interactive-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1.6fr) minmax(260px, 1fr);
+    gap: 25px;
+    align-items: start;
+}
+
+.camera-visual-panel {
+    padding: 25px;
+    background: #E7EBDD;
+    border-radius: 16px;
+    min-width: 0;
+}
+
+.camera-view[hidden] {
+    display: none;
+}
+
+.camera-illustration {
+    position: relative;
+    width: 100%;
+}
+
+.camera-illustration svg {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Интерактивные точки */
+
+.camera-hotspot {
+    position: absolute;
+    left: var(--x);
+    top: var(--y);
+    transform: translate(-50%, -50%);
+
+    width: 31px;
+    height: 31px;
+    padding: 0;
+
+    border-radius: 50%;
+    border: 2px solid white;
+
+    background: var(--brown);
+    color: white;
+
+    font-size: 21px;
+    line-height: 1;
+    cursor: pointer;
+
+    box-shadow: 0 3px 10px rgba(0,0,0,0.25);
+    transition: background 0.2s, scale 0.2s;
+}
+
+.camera-hotspot:hover,
+.camera-hotspot.active,
+.camera-hotspot:focus-visible {
+    background: var(--green);
+    scale: 1.2;
+    outline: 2px solid var(--sand);
+    outline-offset: 2px;
+}
+
+.camera-diagram-note {
+    margin: 15px 0 0;
+    color: #60775C;
+    font-size: 13px;
+    text-align: center;
+}
+
+/* Описание элемента */
+
+.camera-details {
+    padding: 30px;
+    background: #EEEDE5;
+    border: 1px solid #DDDCCF;
+    border-radius: 16px;
+    min-height: 220px;
+}
+
+.camera-details h3 {
+    font-family: Georgia, serif;
+    font-size: 30px;
+    color: var(--green);
+    margin: 12px 0 20px;
+}
+
+.camera-details > p:last-child {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* Полный список деталей */
+
+.camera-parts-section {
+    margin-top: 55px;
+}
+
+.camera-parts-section h3 {
+    font-family: Georgia, serif;
+    font-size: 30px;
+    color: var(--green);
+}
+
+.camera-parts-section > p {
+    max-width: 850px;
+    line-height: 1.8;
+}
+
+.camera-parts-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.camera-part-button {
+    padding: 11px 16px;
+    background: #E7EBDD;
+    color: var(--green);
+    border: 1px solid #BDCBB7;
+    border-radius: 9px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.camera-part-button:hover,
+.camera-part-button.active {
+    background: var(--green);
+    color: white;
+}
+
+/* Экспозиционный треугольник */
+
+.exposure-triangle {
+    width: 100%;
+    max-width: 470px;
+    margin: 15px auto 35px;
+}
+
+.exposure-triangle svg {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.exposure-info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.exposure-info-card {
+    padding: 28px;
+    background: #F7F5EE;
+    border: 1px solid #DDDCCF;
+    border-radius: 14px;
+}
+
+.exposure-info-card > span {
+    color: var(--brown);
+    font-size: 14px;
+}
+
+.exposure-info-card h3 {
+    font-family: Georgia, serif;
+    font-size: 27px;
+    color: var(--green);
+    margin: 12px 0 22px;
+}
+
+.exposure-info-card p {
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 17px;
+}
+
+/* Тренажёр */
+
+.camera-simulator {
+    display: grid;
+    grid-template-columns: minmax(240px, 0.8fr) minmax(0, 1.4fr);
+    gap: 25px;
+    align-items: start;
+}
+
+.simulator-controls,
+.simulator-result {
+    padding: 30px;
+    background: #EEEDE5;
+    border-radius: 16px;
+    border: 1px solid #DDDCCF;
+    min-width: 0;
+}
+
+.simulator-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.simulator-controls label {
+    font-weight: bold;
+    color: var(--green);
+    margin-top: 12px;
+}
+
+.simulator-controls select {
+    width: 100%;
+    padding: 13px;
+    background: #F7F5EE;
+    border: 1px solid #B8C8B6;
+    border-radius: 8px;
+    font-size: 16px;
+    color: var(--text);
+}
+
+.camera-reset-button {
+    padding: 14px;
+    margin-top: 25px;
+    background: var(--green);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.camera-reset-button:hover {
+    background: #41634D;
+}
+
+/* Визуальный пример экспозиции */
+
+.simulator-preview {
+    position: relative;
+    isolation: isolate;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    border-radius: 12px;
+    background: linear-gradient(
+        #9EB9B1 0%,
+        #DDE4D1 65%,
+        #E6C79D 100%
+    );
+    filter: brightness(1);
+    transition: filter 0.25s;
+}
+
+.sim-sun {
+    position: absolute;
+    top: 13%;
+    right: 19%;
+    width: 12%;
+    aspect-ratio: 1;
+    background: #F6E7B5;
+    border-radius: 50%;
+    box-shadow: 0 0 35px 15px rgba(246,231,181,0.55);
+}
+
+.sim-mountain {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70%;
+    clip-path: polygon(
+        0 76%, 22% 25%, 43% 75%,
+        65% 13%, 100% 77%, 100% 100%, 0 100%
+    );
+}
+
+.sim-mountain-back {
+    background: #819B86;
+    bottom: 10%;
+}
+
+.sim-mountain-front {
+    background: #385D49;
+    bottom: -18%;
+    transform: scaleX(-1);
+}
+
+.sim-ground {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 16%;
+    background: #294E39;
+}
+
+/* Шкала изменения яркости */
+
+.simulator-meter {
+    margin-top: 25px;
+}
+
+.simulator-meter h3 {
+    font-family: Georgia, serif;
+    font-size: 34px;
+    color: var(--green);
+    margin: 12px 0 20px;
+}
+
+.exposure-meter-track {
+    position: relative;
+    height: 14px;
+    border-radius: 10px;
+    background: linear-gradient(
+        to right,
+        #314038,
+        #8F9F8A 50%,
+        #F5E7B4
+    );
+}
+
+.exposure-meter-center {
+    position: absolute;
+    left: 50%;
+    top: -5px;
+    width: 2px;
+    height: 24px;
+    background: #243D30;
+}
+
+.exposure-meter-indicator {
+    position: absolute;
+    left: 50%;
+    top: -6px;
+    width: 5px;
+    height: 26px;
+    background: #795C46;
+    border: 1px solid white;
+    border-radius: 4px;
+    transform: translateX(-50%);
+    transition: left 0.25s;
+}
+
+.exposure-meter-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    color: var(--brown);
+    margin-top: 12px;
+}
+
+#exposure-message {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-top: 25px;
+}
+
+.simulator-warning {
+    font-size: 13px;
+    line-height: 1.7;
+    color: #60775C;
+}
+
+/* Таблица настроек */
+
+.camera-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.camera-settings-table {
+    width: 100%;
+    min-width: 590px;
+    border-collapse: collapse;
+    background: #F7F5EE;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.camera-settings-table th {
+    padding: 18px;
+    background: var(--green);
+    color: white;
+    text-align: left;
+}
+
+.camera-settings-table td {
+    padding: 18px;
+    border-bottom: 1px solid #DDDCCF;
+}
+
+.camera-settings-table tbody tr:nth-child(even) {
+    background: #E7EBDD;
+}
+
+.camera-practice,
+.camera-next {
+    margin-top: 45px;
+    padding: 35px;
+    background: #E7EBDD;
+    border-radius: 14px;
+}
+
+.camera-practice h3,
+.camera-next h2 {
+    font-family: Georgia, serif;
+    font-size: 29px;
+    color: var(--green);
+    margin: 0 0 20px;
+}
+
+.camera-practice p,
+.camera-next p {
+    line-height: 1.8;
+}
+
+/* Адаптация */
+
+@media (max-width: 900px) {
+    .camera-interactive-layout,
+    .camera-simulator {
+        grid-template-columns: 1fr;
+    }
+
+    .exposure-info-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .camera-intro {
+        padding: 45px 0 55px;
+    }
+
+    .camera-lead,
+    .camera-section-lead {
+        font-size: 16px;
+    }
+
+    .camera-section,
+    .exposure-section,
+    .camera-simulator-section,
+    .camera-settings-section {
+        padding: 50px 0 60px;
+    }
+
+    .camera-visual-panel,
+    .camera-details,
+    .simulator-controls,
+    .simulator-result {
+        padding: 18px;
+    }
+
+    .camera-hotspot {
+        width: 27px;
+        height: 27px;
+        font-size: 18px;
+    }
+
+    .camera-details h3 {
+        font-size: 25px;
+    }
+
+    .camera-practice,
+    .camera-next {
+        padding: 25px;
+    }
+}

@@ -1,0 +1,765 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+          content="Образовательный материал о свете, освещении и цветовой гармонии в фотографии.">
+
+    <title>Свет и цвет — Искусство фотографии</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script src="../js/main.js" defer></script>
+    <script src="../js/light.js" defer></script>
+</head>
+
+<body>
+
+    <!-- ШАПКА САЙТА -->
+
+    <header class="header">
+        <a href="index.html" class="logo">
+            Искусство фотографии
+        </a>
+
+        <nav class="nav" aria-label="Основная навигация">
+            <a href="history.html">История</a>
+            <a href="genres.html">Жанры</a>
+            <a href="camera.html">Камера</a>
+            <a href="light.html" aria-current="page">Свет и цвет</a>
+            <a href="composition.html">Композиция</a>
+            <a href="gallery.html">Галерея</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- ВСТУПЛЕНИЕ -->
+
+        <section class="light-intro">
+            <div class="container">
+
+                <a href="index.html" class="back-link">
+                    <span aria-hidden="true">←</span>
+                    На главную
+                </a>
+
+                <p class="subtitle">
+                    Учимся видеть свет
+                </p>
+
+                <h1>Свет и цвет в фотографии</h1>
+
+                <blockquote class="light-quote">
+                    «В фотографии нет теней, которые
+                    не могли бы быть освещены».
+                    <cite>— Беренис Эббот</cite>
+                </blockquote>
+
+                <p class="light-lead">
+                    Свет позволяет фотографу передавать форму,
+                    объём и настроение, а цвет помогает
+                    создавать выразительные художественные образы.
+                </p>
+
+            </div>
+        </section>
+
+        <!-- МЕНЮ РАЗДЕЛОВ -->
+
+        <section class="light-navigation">
+            <div class="container">
+
+                <h2>Исследуй свет и цвет</h2>
+
+                <nav class="light-menu" aria-label="Разделы страницы">
+                    <a href="#light-types">Типы освещения</a>
+                    <a href="#light-character">Мягкий и жёсткий свет</a>
+                    <a href="#light-direction">Направление света</a>
+                    <a href="#golden-hour">Золотой и синий час</a>
+                    <a href="#color-role">Роль цвета</a>
+                    <a href="#color-temperature">Тёплые и холодные цвета</a>
+                    <a href="#color-harmony">Цветовая гармония</a>
+                </nav>
+
+            </div>
+        </section>
+
+        <!-- ЧАСТЬ 1. СВЕТ -->
+
+        <section class="light-content">
+            <div class="container">
+
+                <div class="light-chapter">
+                    <span class="light-chapter-label">Часть первая</span>
+                    <h2>Свет</h2>
+                    <p>
+                        Освещение определяет, как зритель воспринимает
+                        объекты, пространство и атмосферу фотографии.
+                    </p>
+                </div>
+
+                <!-- ЕСТЕСТВЕННЫЙ И ИСКУССТВЕННЫЙ СВЕТ -->
+
+                <article class="light-block" id="light-types">
+                    <div class="light-block-heading">
+                        <span class="light-number">01</span>
+                        <h2>Естественное и искусственное освещение</h2>
+                    </div>
+
+                    <p>
+                        В фотографии выделяют два основных типа
+                        освещения: естественное и искусственное.
+                    </p>
+
+                    <p>
+                        Естественный свет создаётся природными
+                        источниками, прежде всего солнцем.
+                        Его особенности зависят от времени суток,
+                        погоды и окружающей среды.
+                        Например, в пасмурный день облака
+                        рассеивают солнечные лучи, делая
+                        освещение мягким и равномерным.
+                    </p>
+
+                    <p>
+                        Искусственный свет создаётся с помощью
+                        ламп, вспышек, светодиодных панелей
+                        и других осветительных приборов.
+                        Его главное преимущество — возможность
+                        контролировать направление, яркость
+                        и иногда цвет освещения.
+                    </p>
+
+                    <p>
+                        Оба типа света могут использоваться как
+                        отдельно, так и вместе, позволяя фотографу
+                        создавать различные визуальные эффекты.
+                    </p>
+
+                    <div class="light-photo-grid">
+
+                        <figure class="light-photo-card">
+                            <div class="light-image">
+                                <img src="../images/light/1.jpg"
+                                     alt="Фотография при естественном освещении"
+                                     data-gallery="light-types"
+                                     data-caption="Естественное освещение"
+                                     loading="lazy">
+                            </div>
+
+                            <figcaption>
+                                <strong>Естественный свет</strong>
+                                <span>Солнце, небо и отражённое освещение</span>
+                            </figcaption>
+                        </figure>
+
+                        <figure class="light-photo-card">
+                            <div class="light-image">
+                                <img src="../images/light/2.jpg"
+                                     alt="Фотография при искусственном освещении"
+                                     data-gallery="light-types"
+                                     data-caption="Искусственное освещение"
+                                     loading="lazy">
+                            </div>
+
+                            <figcaption>
+                                <strong>Искусственный свет</strong>
+                                <span>Лампы, вспышки и светодиодные панели</span>
+                            </figcaption>
+                        </figure>
+
+                    </div>
+                </article>
+
+                <!-- МЯГКИЙ И ЖЁСТКИЙ СВЕТ -->
+
+                <article class="light-block" id="light-character">
+                    <div class="light-block-heading">
+                        <span class="light-number">02</span>
+                        <h2>Мягкий и жёсткий свет</h2>
+                    </div>
+
+                    <p>
+                        По характеру освещения свет принято
+                        разделять на мягкий и жёсткий.
+                    </p>
+
+                    <p>
+                        Мягкий свет создаёт плавные переходы между
+                        освещёнными и затенёнными участками.
+                        Тени получаются размытыми, а контраст —
+                        относительно невысоким.
+                        Такой свет часто используют в портретной,
+                        предметной и художественной фотографии.
+                    </p>
+
+                    <p>
+                        Мягкое освещение можно получить в пасмурную
+                        погоду, возле большого окна или при
+                        использовании специальных рассеивателей.
+                    </p>
+
+                    <p>
+                        Жёсткий свет образует чёткие, выразительные
+                        тени и сильные перепады яркости.
+                        Он помогает подчеркнуть геометрию,
+                        фактуру и форму объектов.
+                    </p>
+
+                    <p>
+                        Примером жёсткого освещения может служить
+                        прямой солнечный свет в ясный полдень.
+                        Несмотря на сложность работы с ним,
+                        такой свет позволяет создавать необычные
+                        контрастные и драматичные фотографии.
+                    </p>
+
+                    <div class="light-photo-grid">
+
+                        <figure class="light-photo-card">
+                            <div class="light-image">
+                                <img src="../images/light/3.jpg"
+                                     alt="Пример мягкого света"
+                                     data-gallery="soft-hard"
+                                     data-caption="Мягкий свет: плавные тени"
+                                     loading="lazy">
+                            </div>
+
+                            <figcaption>
+                                <strong>Мягкий свет</strong>
+                                <span>Плавные переходы и мягкие тени</span>
+                            </figcaption>
+                        </figure>
+
+                        <figure class="light-photo-card">
+                            <div class="light-image">
+                                <img src="../images/light/4.jpg"
+                                     alt="Пример жёсткого света"
+                                     data-gallery="soft-hard"
+                                     data-caption="Жёсткий свет: контраст и резкие тени"
+                                     loading="lazy">
+                            </div>
+
+                            <figcaption>
+                                <strong>Жёсткий свет</strong>
+                                <span>Резкие границы теней и контраст</span>
+                            </figcaption>
+                        </figure>
+
+                    </div>
+                </article>
+
+                <!-- НАПРАВЛЕНИЕ СВЕТА -->
+
+                <article class="light-block" id="light-direction">
+                    <div class="light-block-heading">
+                        <span class="light-number">03</span>
+                        <h2>Направление света</h2>
+                    </div>
+
+                    <p>
+                        Направление света значительно влияет
+                        на восприятие формы и объёма объектов.
+                        В зависимости от расположения источника
+                        освещения выделяют несколько основных вариантов.
+                    </p>
+
+                    <div class="light-info-grid">
+
+                        <div class="light-info-card">
+                            <span>01</span>
+                            <h3>Фронтальный</h3>
+                            <p>
+                                Свет направлен на объект со стороны
+                                камеры. Он равномерно освещает
+                                поверхность, уменьшает заметность
+                                теней и делает изображение
+                                менее объёмным.
+                            </p>
+                        </div>
+
+                        <div class="light-info-card">
+                            <span>02</span>
+                            <h3>Боковой</h3>
+                            <p>
+                                Свет падает на объект сбоку.
+                                Он подчёркивает рельеф,
+                                текстуры и объём, создавая
+                                выразительные переходы между
+                                светлыми и тёмными участками.
+                            </p>
+                        </div>
+
+                        <div class="light-info-card">
+                            <span>03</span>
+                            <h3>Контровой</h3>
+                            <p>
+                                Свет находится позади объекта
+                                и направлен в сторону камеры.
+                                Он позволяет создавать силуэты,
+                                светящиеся контуры волос и фигуры,
+                                а также атмосферные кадры.
+                            </p>
+                        </div>
+
+                        <div class="light-info-card">
+                            <span>04</span>
+                            <h3>Верхний</h3>
+                            <p>
+                                Свет располагается над объектом.
+                                Он может создавать глубокие тени
+                                под глазами, носом и подбородком,
+                                а также подчёркивать форму предметов.
+                            </p>
+                        </div>
+
+                        <div class="light-info-card">
+                            <span>05</span>
+                            <h3>Нижний</h3>
+                            <p>
+                                Свет направлен снизу вверх.
+                                Он встречается реже и часто
+                                используется для создания необычного,
+                                загадочного или тревожного настроения.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <p>
+                        Выбор направления света зависит от того,
+                        какие особенности объекта фотограф
+                        хочет подчеркнуть.
+                    </p>
+
+                    <div class="light-photo-grid light-photo-grid-three">
+
+                        <figure class="light-photo-card">
+                            <div class="light-image">
+                                <img src="../images/light/5.jpg"
+                                     alt="Фронтальное освещение"
+                                     data-gallery="directions"
+                                     data-caption="Фронтальное освещение"
+                                     loading="lazy">
+                            </div>
+                            <figcaption>Фронтальный свет</figcaption>
+                        </figure>
+
+                        <figure class="light-photo-card">
+                            <div class="light-image">
+                                <img src="../images/light/6.jpg"
+                                     alt="Боковое освещение"
+                                     data-gallery="directions"
+                                     data-caption="Боковое освещение"
+                                     loading="lazy">
+                            </div>
+                            <figcaption>Боковой свет</figcaption>
+                        </figure>
+
+                        <figure class="light-photo-card">
+                            <div class="light-image">
+                                <img src="../images/light/7.jpg"
+                                     alt="Контровое освещение"
+                                     data-gallery="directions"
+                                     data-caption="Контровое освещение"
+                                     loading="lazy">
+                            </div>
+                            <figcaption>Контровой свет</figcaption>
+                        </figure>
+
+                    </div>
+                </article>
+
+                <!-- ЗОЛОТОЙ И СИНИЙ ЧАС -->
+
+                <article class="light-block" id="golden-hour">
+                    <div class="light-block-heading">
+                        <span class="light-number">04</span>
+                        <h2>Золотой и синий час</h2>
+                    </div>
+
+                    <p>
+                        В течение дня характер естественного
+                        освещения постоянно меняется.
+                        Особенно интересными для фотографов
+                        считаются два коротких периода —
+                        золотой и синий час.
+                    </p>
+
+                    <p>
+                        Золотой час наступает вскоре после
+                        восхода солнца и незадолго до заката.
+                        В это время солнечные лучи проходят
+                        через более толстый слой атмосферы,
+                        благодаря чему свет приобретает
+                        тёплый золотистый оттенок.
+                        Низкое положение солнца создаёт
+                        длинные тени и красиво подчёркивает
+                        объём объектов.
+                    </p>
+
+                    <p>
+                        Золотой час особенно популярен
+                        в портретной, пейзажной
+                        и художественной фотографии.
+                    </p>
+
+                    <p>
+                        Синий час — период сумерек незадолго
+                        до восхода или после заката, когда
+                        солнце находится ниже горизонта,
+                        а небо приобретает насыщенные
+                        холодные оттенки.
+                    </p>
+
+                    <p>
+                        Такое освещение создаёт спокойную,
+                        загадочную атмосферу и часто используется
+                        для съёмки городов, архитектуры
+                        и ночных пейзажей.
+                    </p>
+
+                    <div class="light-photo-grid">
+
+                        <figure class="light-photo-card">
+                            <div class="light-image">
+                                <img src="../images/light/8.jpg"
+                                     alt="Фотография во время золотого часа"
+                                     data-gallery="hours"
+                                     data-caption="Золотой час"
+                                     loading="lazy">
+                            </div>
+                            <figcaption>
+                                <strong>Золотой час</strong>
+                                <span>Тёплые оттенки и длинные тени</span>
+                            </figcaption>
+                        </figure>
+
+                        <figure class="light-photo-card">
+                            <div class="light-image">
+                                <img src="../images/light/9.jpg"
+                                     alt="Фотография во время синего часа"
+                                     data-gallery="hours"
+                                     data-caption="Синий час"
+                                     loading="lazy">
+                            </div>
+                            <figcaption>
+                                <strong>Синий час</strong>
+                                <span>Холодные сумеречные оттенки</span>
+                            </figcaption>
+                        </figure>
+
+                    </div>
+                </article>
+
+                <!-- ЧАСТЬ 2. ЦВЕТ -->
+
+                <div class="light-chapter light-color-chapter">
+                    <span class="light-chapter-label">Часть вторая</span>
+                    <h2>Цвет</h2>
+                    <p>
+                        Цвет влияет на настроение кадра,
+                        визуальную гармонию и восприятие изображения.
+                    </p>
+                </div>
+
+                <!-- РОЛЬ ЦВЕТА -->
+
+                <article class="light-block" id="color-role">
+                    <div class="light-block-heading">
+                        <span class="light-number">05</span>
+                        <h2>Роль цвета в фотографии</h2>
+                    </div>
+
+                    <p>
+                        Цвет — один из главных способов
+                        передачи настроения и эмоций в фотографии.
+                        Он помогает выделить важные детали,
+                        создать визуальную гармонию
+                        и направить внимание зрителя.
+                    </p>
+
+                    <p>
+                        Разные цвета могут вызывать различные
+                        ассоциации. Тёплые оттенки часто
+                        воспринимаются как уютные и энергичные,
+                        тогда как холодные могут создавать
+                        ощущение спокойствия, свежести
+                        или отстранённости.
+                    </p>
+
+                    <p>
+                        Цветовое решение фотографии зависит
+                        от освещения, окружающей обстановки,
+                        настроек камеры и последующей обработки.
+                    </p>
+
+                    <p>
+                        Фотограф может стремиться к естественной
+                        передаче цветов или намеренно изменять
+                        их для достижения художественного эффекта.
+                    </p>
+
+                    <figure class="light-wide-figure">
+                        <div class="light-image">
+                            <img src="../images/light/10.jpg"
+                                 alt="Цвет как художественный инструмент"
+                                 data-caption="Использование цвета в фотографии"
+                                 loading="lazy">
+                        </div>
+                        <figcaption>
+                            Цвет помогает создавать настроение
+                            и выделять главный объект в кадре
+                        </figcaption>
+                    </figure>
+                </article>
+
+                <!-- ТЁПЛЫЕ И ХОЛОДНЫЕ ЦВЕТА -->
+
+                <article class="light-block" id="color-temperature">
+                    <div class="light-block-heading">
+                        <span class="light-number">06</span>
+                        <h2>Тёплые и холодные цвета</h2>
+                    </div>
+
+                    <p>
+                        Цвета условно разделяют на тёплые
+                        и холодные в зависимости
+                        от их визуального восприятия.
+                    </p>
+
+                    <p>
+                        Тёплые цвета — красный, оранжевый,
+                        жёлтый и близкие к ним оттенки.
+                        Они часто ассоциируются с солнечным
+                        светом, теплом, энергией и уютом.
+                    </p>
+
+                    <p>
+                        Тёплая цветовая гамма хорошо подходит
+                        для осенних пейзажей, портретов на закате
+                        и фотографий с атмосферой домашнего уюта.
+                    </p>
+
+                    <p>
+                        Холодные цвета — синий, голубой,
+                        сине-зелёный и близкие оттенки.
+                        Они могут передавать спокойствие,
+                        прохладу, загадочность
+                        или ощущение пространства.
+                    </p>
+
+                    <p>
+                        Холодная гамма нередко используется
+                        в зимних пейзажах, ночной фотографии
+                        и снимках с более сдержанным настроением.
+                        При этом эмоциональное восприятие цветов
+                        зависит от их сочетаний, яркости
+                        и содержания фотографии.
+                    </p>
+
+                    <div class="light-photo-grid">
+
+                        <figure class="light-photo-card">
+                            <div class="light-image">
+                                <img src="../images/light/11.jpg"
+                                     alt="Фотография в тёплой цветовой гамме"
+                                     data-gallery="temperature"
+                                     data-caption="Тёплая цветовая гамма"
+                                     loading="lazy">
+                            </div>
+                            <figcaption>
+                                <strong>Тёплая гамма</strong>
+                                <span>Красные, оранжевые и жёлтые оттенки</span>
+                            </figcaption>
+                        </figure>
+
+                        <figure class="light-photo-card">
+                            <div class="light-image">
+                                <img src="../images/light/12.jpg"
+                                     alt="Фотография в холодной цветовой гамме"
+                                     data-gallery="temperature"
+                                     data-caption="Холодная цветовая гамма"
+                                     loading="lazy">
+                            </div>
+                            <figcaption>
+                                <strong>Холодная гамма</strong>
+                                <span>Синие, голубые и сине-зелёные оттенки</span>
+                            </figcaption>
+                        </figure>
+
+                    </div>
+                </article>
+
+                <!-- ЦВЕТОВАЯ ГАРМОНИЯ -->
+
+                <article class="light-block" id="color-harmony">
+                    <div class="light-block-heading">
+                        <span class="light-number">07</span>
+                        <h2>Цветовой круг и гармония цветов</h2>
+                    </div>
+
+                    <p>
+                        Для создания гармоничных сочетаний
+                        фотографы и художники используют
+                        цветовой круг — схему, показывающую
+                        взаимное расположение различных цветов.
+                    </p>
+
+                    <p>
+                        Он помогает подбирать оттенки,
+                        которые хорошо сочетаются между собой
+                        или, наоборот, создают выразительный контраст.
+                    </p>
+
+                    <p>
+                        Существует несколько основных схем
+                        цветовой гармонии.
+                    </p>
+
+                    <!-- ИНТЕРАКТИВНЫЙ ВЫБОР ПАЛИТР -->
+
+                    <div class="harmony-demo">
+
+                        <h3>Исследуй цветовые сочетания</h3>
+
+                        <p>
+                            Выбери тип гармонии и посмотри,
+                            как меняется цветовая палитра.
+                        </p>
+
+                        <div class="harmony-controls">
+                            <button type="button"
+                                    class="harmony-button active"
+                                    data-harmony="complementary"
+                                    aria-pressed="true">
+                                Комплементарная
+                            </button>
+
+                            <button type="button"
+                                    class="harmony-button"
+                                    data-harmony="analogous"
+                                    aria-pressed="false">
+                                Аналоговая
+                            </button>
+
+                            <button type="button"
+                                    class="harmony-button"
+                                    data-harmony="triadic"
+                                    aria-pressed="false">
+                                Триадная
+                            </button>
+
+                            <button type="button"
+                                    class="harmony-button"
+                                    data-harmony="monochrome"
+                                    aria-pressed="false">
+                                Монохромная
+                            </button>
+                        </div>
+
+                        <div class="harmony-palette"
+                             id="harmony-palette"
+                             aria-label="Цветовая палитра">
+
+                            <div class="harmony-swatch"
+                                 style="background:#315E87"></div>
+
+                            <div class="harmony-swatch"
+                                 style="background:#E9A65D"></div>
+                        </div>
+
+                        <p class="harmony-description"
+                           id="harmony-description"
+                           aria-live="polite">
+                            Комплементарная гармония:
+                            сочетание противоположных цветов,
+                            например синего и оранжевого.
+                        </p>
+
+                    </div>
+
+                    <div class="light-harmony-list">
+
+                        <div class="light-harmony-item">
+                            <h3>Комплементарная гармония</h3>
+                            <p>
+                                Основана на сочетании противоположных
+                                цветов цветового круга, например
+                                синего и оранжевого.
+                                Такие сочетания создают сильный
+                                визуальный контраст и помогают
+                                выделить объект на фоне.
+                            </p>
+                        </div>
+
+                        <div class="light-harmony-item">
+                            <h3>Аналоговая гармония</h3>
+                            <p>
+                                Использует соседние цвета, например
+                                зелёный, жёлто-зелёный и жёлтый.
+                                Подобные сочетания обычно выглядят
+                                спокойными и естественными.
+                            </p>
+                        </div>
+
+                        <div class="light-harmony-item">
+                            <h3>Триадная гармония</h3>
+                            <p>
+                                Объединяет три цвета, расположенных
+                                на примерно равном расстоянии
+                                друг от друга на цветовом круге.
+                                Она позволяет создавать яркие,
+                                но сбалансированные изображения.
+                            </p>
+                        </div>
+
+                        <div class="light-harmony-item">
+                            <h3>Монохромная гармония</h3>
+                            <p>
+                                Строится на использовании разных
+                                оттенков, насыщенности и яркости
+                                одного цвета.
+                                Такие фотографии часто выглядят
+                                цельными и атмосферными.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <p>
+                        Знание цветовых сочетаний помогает фотографу
+                        осознанно подбирать фон, одежду модели
+                        и окружающие предметы.
+                    </p>
+
+                </article>
+
+                <!-- ПЕРЕХОД К СЛЕДУЮЩЕЙ СТРАНИЦЕ -->
+
+                <div class="light-next">
+                    <p class="subtitle">Продолжить изучение</p>
+                    <h2>Узнай больше о композиции кадра</h2>
+
+                    <a href="composition.html" class="button">
+                        Перейти к композиции
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ПОДВАЛ -->
+
+    <footer class="footer">
+        <p>Искусство фотографии · Образовательный проект</p>
+    </footer>
+
+</body>
+</html>

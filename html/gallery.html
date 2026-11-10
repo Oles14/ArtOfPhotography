@@ -1,0 +1,401 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Фотогалерея образовательного ресурса Искусство фотографии. Портреты, природа, архитектура и художественные снимки.">
+
+    <title>Фотогалерея — Искусство фотографии</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script src="../js/main.js" defer></script>
+    <script src="../js/gallery.js" defer></script>
+</head>
+
+<body>
+
+    <!-- ШАПКА САЙТА -->
+
+    <header class="header">
+
+        <a href="index.html" class="logo">
+            Искусство фотографии
+        </a>
+
+        <nav class="nav" aria-label="Основная навигация">
+            <a href="history.html">История</a>
+            <a href="genres.html">Жанры</a>
+            <a href="camera.html">Камера</a>
+            <a href="light.html">Свет и цвет</a>
+            <a href="composition.html">Композиция</a>
+            <a href="gallery.html" aria-current="page">
+                Галерея
+            </a>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <!-- ВСТУПЛЕНИЕ -->
+
+        <section class="gallery-intro">
+
+            <div class="container">
+
+                <a href="index.html" class="back-link">
+                    <span aria-hidden="true">←</span>
+                    На главную
+                </a>
+
+                <p class="subtitle">
+                    Искусство в каждом кадре
+                </p>
+
+                <h1>Фотогалерея</h1>
+
+                <p class="gallery-lead">
+                    Каждая фотография — это отдельная история,
+                    рассказанная с помощью света, цвета
+                    и композиции.
+                </p>
+
+                <p class="gallery-description">
+                    Исследуй разные жанры и художественные приёмы,
+                    вдохновляйся образами и замечай красоту
+                    в окружающем мире.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- ГАЛЕРЕЯ -->
+
+        <section class="gallery-section">
+
+            <div class="container">
+
+                <div class="gallery-heading">
+
+                    <div>
+                        <p class="subtitle">Коллекция снимков</p>
+                        <h2>Мир через объектив</h2>
+                    </div>
+
+                    <p class="gallery-total" id="gallery-count"
+                       aria-live="polite">
+                        Показано фотографий: 12
+                    </p>
+
+                </div>
+
+                <!-- КНОПКИ ФИЛЬТРАЦИИ -->
+
+                <div class="gallery-filters"
+                     aria-label="Фильтрация фотографий">
+
+                    <button type="button"
+                            class="gallery-filter active"
+                            data-filter="all"
+                            aria-pressed="true">
+                        Все фотографии
+                    </button>
+
+                    <button type="button"
+                            class="gallery-filter"
+                            data-filter="nature"
+                            aria-pressed="false">
+                        Природа
+                    </button>
+
+                    <button type="button"
+                            class="gallery-filter"
+                            data-filter="people"
+                            aria-pressed="false">
+                        Люди
+                    </button>
+
+                    <button type="button"
+                            class="gallery-filter"
+                            data-filter="city"
+                            aria-pressed="false">
+                        Город
+                    </button>
+
+                    <button type="button"
+                            class="gallery-filter"
+                            data-filter="details"
+                            aria-pressed="false">
+                        Детали
+                    </button>
+
+                </div>
+
+                <!-- МОЗАИКА -->
+
+                <div class="gallery-mosaic">
+
+                    <!-- ФОТО 01 -->
+
+                    <figure class="gallery-card"
+                            data-category="nature">
+
+                        <img src="../images/gallery/1.jpg"
+                             alt="Природный пейзаж"
+                             data-gallery="photo-collection"
+                             data-caption="Природный пейзаж"
+                             loading="lazy">
+
+                        <figcaption>
+                            <strong>Природный пейзаж</strong>
+                            <span>Природа</span>
+                        </figcaption>
+
+                    </figure>
+
+                    <!-- ФОТО 02 -->
+
+                    <figure class="gallery-card"
+                            data-category="people">
+
+                        <img src="../images/gallery/2.jpg"
+                             alt="Художественный портрет"
+                             data-gallery="photo-collection"
+                             data-caption="Художественный портрет"
+                             loading="lazy">
+
+                        <figcaption>
+                            <strong>Художественный портрет</strong>
+                            <span>Люди</span>
+                        </figcaption>
+
+                    </figure>
+
+                    <!-- ФОТО 03 -->
+
+                    <figure class="gallery-card"
+                            data-category="city">
+
+                        <img src="../images/gallery/3.jpg"
+                             alt="Городская архитектура"
+                             data-gallery="photo-collection"
+                             data-caption="Городская архитектура"
+                             loading="lazy">
+
+                        <figcaption>
+                            <strong>Городская архитектура</strong>
+                            <span>Город</span>
+                        </figcaption>
+
+                    </figure>
+
+                    <!-- ФОТО 04 -->
+
+                    <figure class="gallery-card"
+                            data-category="details">
+
+                        <img src="../images/gallery/4.jpg"
+                             alt="Детали окружающего мира"
+                             data-gallery="photo-collection"
+                             data-caption="Детали окружающего мира"
+                             loading="lazy">
+
+                        <figcaption>
+                            <strong>Незаметные детали</strong>
+                            <span>Детали</span>
+                        </figcaption>
+
+                    </figure>
+
+                    <!-- ФОТО 05 -->
+
+                    <figure class="gallery-card"
+                            data-category="nature">
+
+                        <img src="../images/gallery/5.jpg"
+                             alt="Лесной пейзаж"
+                             data-gallery="photo-collection"
+                             data-caption="Лесной пейзаж"
+                             loading="lazy">
+
+                        <figcaption>
+                            <strong>Лесной пейзаж</strong>
+                            <span>Природа</span>
+                        </figcaption>
+
+                    </figure>
+
+                    <!-- ФОТО 06 -->
+
+                    <figure class="gallery-card"
+                            data-category="people">
+
+                        <img src="../images/gallery/6.jpg"
+                             alt="Человек в кадре"
+                             data-gallery="photo-collection"
+                             data-caption="Человек в кадре"
+                             loading="lazy">
+
+                        <figcaption>
+                            <strong>Человек в кадре</strong>
+                            <span>Люди</span>
+                        </figcaption>
+
+                    </figure>
+
+                    <!-- ФОТО 07 -->
+
+                    <figure class="gallery-card"
+                            data-category="city">
+
+                        <img src="../images/gallery/7.jpg"
+                             alt="Уличная фотография"
+                             data-gallery="photo-collection"
+                             data-caption="Уличная фотография"
+                             loading="lazy">
+
+                        <figcaption>
+                            <strong>Городские истории</strong>
+                            <span>Город</span>
+                        </figcaption>
+
+                    </figure>
+
+                    <!-- ФОТО 08 -->
+
+                    <figure class="gallery-card"
+                            data-category="details">
+
+                        <img src="../images/gallery/8.jpg"
+                             alt="Макрофотография"
+                             data-gallery="photo-collection"
+                             data-caption="Макрофотография"
+                             loading="lazy">
+
+                        <figcaption>
+                            <strong>Мир в деталях</strong>
+                            <span>Детали</span>
+                        </figcaption>
+
+                    </figure>
+
+                    <!-- ФОТО 09 -->
+
+                    <figure class="gallery-card"
+                            data-category="nature">
+
+                        <img src="../images/gallery/9.jpg"
+                             alt="Природа в золотой час"
+                             data-gallery="photo-collection"
+                             data-caption="Природа в золотой час"
+                             loading="lazy">
+
+                        <figcaption>
+                            <strong>Золотой час</strong>
+                            <span>Природа</span>
+                        </figcaption>
+
+                    </figure>
+
+                    <!-- ФОТО 10 -->
+
+                    <figure class="gallery-card"
+                            data-category="people">
+
+                        <img src="../images/gallery/10.jpg"
+                             alt="Репортажный снимок"
+                             data-gallery="photo-collection"
+                             data-caption="Репортажный снимок"
+                             loading="lazy">
+
+                        <figcaption>
+                            <strong>Мгновение жизни</strong>
+                            <span>Люди</span>
+                        </figcaption>
+
+                    </figure>
+
+                    <!-- ФОТО 11 -->
+
+                    <figure class="gallery-card"
+                            data-category="city">
+
+                        <img src="../images/gallery/11.jpg"
+                             alt="Архитектурные линии"
+                             data-gallery="photo-collection"
+                             data-caption="Архитектурные линии"
+                             loading="lazy">
+
+                        <figcaption>
+                            <strong>Линии города</strong>
+                            <span>Город</span>
+                        </figcaption>
+
+                    </figure>
+
+                    <!-- ФОТО 12 -->
+
+                    <figure class="gallery-card"
+                            data-category="details">
+
+                        <img src="../images/gallery/12.jpg"
+                             alt="Художественная предметная фотография"
+                             data-gallery="photo-collection"
+                             data-caption="Художественная предметная фотография"
+                             loading="lazy">
+
+                        <figcaption>
+                            <strong>Игра фактур</strong>
+                            <span>Детали</span>
+                        </figcaption>
+
+                    </figure>
+
+                </div>
+
+                <!-- ЗАВЕРШАЮЩИЙ БЛОК -->
+
+                <div class="gallery-next">
+
+                    <p class="subtitle">Продолжить изучение</p>
+
+                    <h2>
+                        Узнай, как создаются выразительные кадры
+                    </h2>
+
+                    <p>
+                        Изучи композицию, освещение и приёмы,
+                        которые помогают фотографу воплотить
+                        творческий замысел.
+                    </p>
+
+                    <a href="composition.html" class="button">
+                        Изучить композицию
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- ПОДВАЛ -->
+
+    <footer class="footer">
+
+        <p>
+            Искусство фотографии · Образовательный проект
+        </p>
+
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,652 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+          content="Основные приёмы композиции в фотографии с примерами и интерактивной сеткой правила третей.">
+
+    <title>Композиция — Искусство фотографии</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script src="../js/main.js" defer></script>
+    <script src="../js/composition.js" defer></script>
+</head>
+<body>
+
+    <!-- ШАПКА САЙТА -->
+
+    <header class="header">
+        <a href="index.html" class="logo">
+            Искусство фотографии
+        </a>
+
+        <nav class="nav" aria-label="Основная навигация">
+            <a href="history.html">История</a>
+            <a href="genres.html">Жанры</a>
+            <a href="camera.html">Камера</a>
+            <a href="light.html">Свет и цвет</a>
+            <a href="composition.html" aria-current="page">
+                Композиция
+            </a>
+            <a href="gallery.html">Галерея</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- ВСТУПЛЕНИЕ -->
+
+        <section class="composition-intro">
+            <div class="container">
+
+                <a href="index.html" class="back-link">
+                    <span aria-hidden="true">←</span>
+                    На главную
+                </a>
+
+                <p class="subtitle">
+                    Искусство построения кадра
+                </p>
+
+                <h1>Композиция в фотографии</h1>
+
+                <p class="composition-lead">
+                    Композиция — это расположение визуальных
+                    элементов в кадре, продуманное построение
+                    изображения и соотношение отдельных частей,
+                    образующее единое целое.
+                </p>
+
+                <div class="composition-quote">
+                    Главная задача фотографа —
+                    управление вниманием зрителя.
+                </div>
+
+            </div>
+        </section>
+
+        <!-- НАВИГАЦИЯ ПО ПРИЁМАМ -->
+
+        <section class="composition-navigation">
+            <div class="container">
+
+                <h2>Приёмы композиции</h2>
+
+                <nav class="composition-menu"
+                     aria-label="Композиционные приёмы">
+
+                    <a href="#thirds">01. Правило третей</a>
+                    <a href="#golden">02. Золотое сечение</a>
+                    <a href="#lines">03. Ведущие линии</a>
+                    <a href="#symmetry">04. Симметрия</a>
+                    <a href="#angle">05. Необычный ракурс</a>
+                    <a href="#negative">06. Негативное пространство</a>
+                    <a href="#horizon">07. Горизонт и голландский угол</a>
+                    <a href="#framing">08. Фрейминг</a>
+                    <a href="#contrast">09. Контраст</a>
+                    <a href="#patterns">10. Паттерны</a>
+
+                </nav>
+
+            </div>
+        </section>
+
+        <!-- ОСНОВНЫЕ РАЗДЕЛЫ -->
+
+        <section class="composition-content">
+            <div class="container">
+
+                <!-- 01 ПРАВИЛО ТРЕТЕЙ -->
+
+                <article class="composition-block" id="thirds">
+
+                    <div class="composition-heading">
+                        <span class="composition-number">01</span>
+                        <h2>Правило третей</h2>
+                    </div>
+
+                    <p>
+                        Правило третей — один из самых известных
+                        приёмов построения композиции.
+                        Кадр мысленно делится двумя вертикальными
+                        и двумя горизонтальными линиями
+                        на девять равных частей.
+                    </p>
+
+                    <p>
+                        Важные объекты часто располагают вдоль
+                        этих линий или в точках их пересечения.
+                        Такой подход помогает создать визуально
+                        сбалансированную и выразительную фотографию.
+                    </p>
+
+                    <p>
+                        Например, при съёмке пейзажа горизонт
+                        можно расположить на верхней или нижней
+                        линии, а человека — возле одной
+                        из вертикальных.
+                    </p>
+
+                    <!-- ИНТЕРАКТИВНАЯ СЕТКА -->
+
+                    <div class="thirds-demo">
+
+                        <h3>Попробуй правило третей</h3>
+
+                        <p>
+                            Нажми на кнопку, чтобы наложить
+                            композиционную сетку на фотографию.
+                        </p>
+
+                        <div class="thirds-photo">
+
+                            <img src="../images/composition/1.jpg"
+                                 alt="Пример композиции по правилу третей"
+                                 data-gallery="composition"
+                                 data-caption="Правило третей"
+                                 loading="lazy">
+
+                            <div class="thirds-overlay"
+                                 id="thirds-overlay"
+                                 aria-hidden="true"></div>
+
+                        </div>
+
+                        <button type="button"
+                                class="composition-button"
+                                id="thirds-toggle"
+                                aria-pressed="false">
+                            Показать сетку
+                        </button>
+
+                        <p class="thirds-hint">
+                            Обрати внимание на четыре точки
+                            пересечения линий.
+                        </p>
+
+                    </div>
+
+                </article>
+
+                <!-- 02 ЗОЛОТОЕ СЕЧЕНИЕ -->
+
+                <article class="composition-block" id="golden">
+
+                    <div class="composition-heading">
+                        <span class="composition-number">02</span>
+                        <h2>Золотое сечение Фибоначчи</h2>
+                    </div>
+
+                    <p>
+                        Золотое сечение — принцип пропорционального
+                        деления, при котором отношение целого
+                        к большей части равно отношению большей
+                        части к меньшей.
+                        Его значение приблизительно равно 1,618.
+                    </p>
+
+                    <p>
+                        В фотографии этот принцип используется
+                        для создания гармоничной композиции.
+                        Один из способов его визуализации —
+                        спираль, построенная на основе
+                        последовательности Фибоначчи.
+                    </p>
+
+                    <p>
+                        Спираль помогает направлять взгляд зрителя
+                        к смысловому центру изображения.
+                        Основной объект можно расположить
+                        в области её сужения, а остальные элементы —
+                        вдоль плавного изгиба.
+                    </p>
+
+                    <figure class="composition-figure">
+                        <img src="../images/composition/2.jpg"
+                             alt="Пример композиции с золотым сечением"
+                             data-gallery="composition"
+                             data-caption="Золотое сечение Фибоначчи"
+                             loading="lazy">
+
+                        <figcaption>
+                            Пример использования золотого сечения
+                        </figcaption>
+                    </figure>
+
+                </article>
+
+                <!-- 03 ВЕДУЩИЕ ЛИНИИ -->
+
+                <article class="composition-block" id="lines">
+
+                    <div class="composition-heading">
+                        <span class="composition-number">03</span>
+                        <h2>Ведущие линии</h2>
+                    </div>
+
+                    <p>
+                        Ведущие линии — это линии внутри кадра,
+                        которые направляют взгляд зрителя
+                        к определённому объекту или вглубь
+                        изображения.
+                    </p>
+
+                    <p>
+                        Ими могут становиться дороги, тропинки,
+                        реки, мосты, заборы, архитектурные элементы
+                        и даже естественные границы света и тени.
+                    </p>
+
+                    <p>
+                        Линии помогают создавать глубину,
+                        подчёркивать перспективу и связывать
+                        разные части фотографии
+                        в единую композицию.
+                    </p>
+
+                    <figure class="composition-figure">
+                        <img src="../images/composition/3.jpg"
+                             alt="Пример ведущих линий"
+                             data-gallery="composition"
+                             data-caption="Ведущие линии"
+                             loading="lazy">
+
+                        <figcaption>
+                            Линии направляют взгляд зрителя
+                            к главному объекту
+                        </figcaption>
+                    </figure>
+
+                </article>
+
+                <!-- 04 СИММЕТРИЯ И АСИММЕТРИЯ -->
+
+                <article class="composition-block" id="symmetry">
+
+                    <div class="composition-heading">
+                        <span class="composition-number">04</span>
+                        <h2>Симметрия и асимметрия</h2>
+                    </div>
+
+                    <p>
+                        Симметрия возникает, когда элементы
+                        по разные стороны воображаемой оси
+                        выглядят одинаковыми или похожими.
+                        Она создаёт ощущение порядка,
+                        устойчивости и гармонии.
+                    </p>
+
+                    <p>
+                        Симметричные композиции часто встречаются
+                        в архитектурной фотографии, отражениях
+                        и снимках природных объектов.
+                    </p>
+
+                    <p>
+                        Асимметрия предполагает неравномерное
+                        расположение элементов. При этом кадр
+                        может оставаться сбалансированным
+                        благодаря цвету, размеру и визуальному
+                        весу объектов.
+                    </p>
+
+                    <div class="composition-photo-grid">
+
+                        <figure class="composition-figure">
+                            <img src="../images/composition/4.jpg"
+                                 alt="Симметричная композиция"
+                                 data-gallery="symmetry"
+                                 data-caption="Симметрия"
+                                 loading="lazy">
+
+                            <figcaption>Симметрия</figcaption>
+                        </figure>
+
+                        <figure class="composition-figure">
+                            <img src="../images/composition/5.jpg"
+                                 alt="Асимметричная композиция"
+                                 data-gallery="symmetry"
+                                 data-caption="Асимметрия"
+                                 loading="lazy">
+
+                            <figcaption>Асимметрия</figcaption>
+                        </figure>
+
+                    </div>
+
+                </article>
+
+                <!-- 05 НЕОБЫЧНЫЙ РАКУРС -->
+
+                <article class="composition-block" id="angle">
+
+                    <div class="composition-heading">
+                        <span class="composition-number">05</span>
+                        <h2>Необычный ракурс</h2>
+                    </div>
+
+                    <p>
+                        Ракурс — это положение камеры относительно
+                        фотографируемого объекта.
+                        Изменение точки съёмки позволяет
+                        по-новому показать привычные предметы
+                        и окружающее пространство.
+                    </p>
+
+                    <p>
+                        Верхний ракурс предполагает съёмку
+                        сверху вниз. Он помогает показать
+                        расположение объектов и их взаимосвязь.
+                    </p>
+
+                    <p>
+                        Нижний ракурс, наоборот, создаётся
+                        при съёмке снизу вверх.
+                        Он может подчёркивать масштаб,
+                        высоту и выразительность объекта.
+                    </p>
+
+                    <div class="composition-photo-grid">
+
+                        <figure class="composition-figure">
+                            <img src="../images/composition/6.jpg"
+                                 alt="Съёмка с верхнего ракурса"
+                                 data-gallery="angles"
+                                 data-caption="Верхний ракурс"
+                                 loading="lazy">
+
+                            <figcaption>Верхний ракурс</figcaption>
+                        </figure>
+
+                        <figure class="composition-figure">
+                            <img src="../images/composition/7.jpg"
+                                 alt="Съёмка с нижнего ракурса"
+                                 data-gallery="angles"
+                                 data-caption="Нижний ракурс"
+                                 loading="lazy">
+
+                            <figcaption>Нижний ракурс</figcaption>
+                        </figure>
+
+                    </div>
+
+                </article>
+
+                <!-- 06 НЕГАТИВНОЕ ПРОСТРАНСТВО -->
+
+                <article class="composition-block" id="negative">
+
+                    <div class="composition-heading">
+                        <span class="composition-number">06</span>
+                        <h2>Негативное пространство</h2>
+                    </div>
+
+                    <p>
+                        Негативное пространство — область кадра,
+                        которая не занята главным объектом.
+                        Это может быть небо, вода, стена,
+                        пустой фон или однородная поверхность.
+                    </p>
+
+                    <p>
+                        Большое количество свободного пространства
+                        помогает выделить главный объект,
+                        подчеркнуть его одиночество, масштаб
+                        или положение в окружающей среде.
+                    </p>
+
+                    <p>
+                        Такой приём часто используется
+                        в минималистичной фотографии
+                        и при создании спокойных,
+                        лаконичных композиций.
+                    </p>
+
+                    <figure class="composition-figure">
+                        <img src="../images/composition/8.jpg"
+                             alt="Пример негативного пространства"
+                             data-gallery="composition"
+                             data-caption="Негативное пространство"
+                             loading="lazy">
+
+                        <figcaption>
+                            Свободное пространство усиливает
+                            внимание к главному объекту
+                        </figcaption>
+                    </figure>
+
+                </article>
+
+                <!-- 07 ГОРИЗОНТ И ГОЛЛАНДСКИЙ УГОЛ -->
+
+                <article class="composition-block" id="horizon">
+
+                    <div class="composition-heading">
+                        <span class="composition-number">07</span>
+                        <h2>Горизонт и голландский угол</h2>
+                    </div>
+
+                    <p>
+                        Линия горизонта влияет на ощущение
+                        равновесия и пространства в фотографии.
+                        Горизонтальное положение камеры обычно
+                        создаёт спокойное и устойчивое изображение.
+                    </p>
+
+                    <p>
+                        При съёмке пейзажа горизонт можно
+                        расположить выше или ниже центра кадра,
+                        в зависимости от того, чему фотограф
+                        хочет уделить больше внимания —
+                        небу или земле.
+                    </p>
+
+                    <p>
+                        Голландский угол — художественный приём,
+                        при котором камера намеренно наклоняется.
+                        Наклонённый горизонт создаёт ощущение
+                        движения, динамики, нестабильности
+                        или напряжения.
+                    </p>
+
+                    <div class="composition-photo-grid">
+
+                        <figure class="composition-figure">
+                            <img src="../images/composition/9.jpg"
+                                 alt="Горизонт в композиции"
+                                 data-gallery="horizon"
+                                 data-caption="Горизонт"
+                                 loading="lazy">
+
+                            <figcaption>Горизонт</figcaption>
+                        </figure>
+
+                        <figure class="composition-figure">
+                            <img src="../images/composition/10.jpg"
+                                 alt="Голландский угол"
+                                 data-gallery="horizon"
+                                 data-caption="Голландский угол"
+                                 loading="lazy">
+
+                            <figcaption>Голландский угол</figcaption>
+                        </figure>
+
+                    </div>
+
+                </article>
+
+                <!-- 08 ФРЕЙМИНГ -->
+
+                <article class="composition-block" id="framing">
+
+                    <div class="composition-heading">
+                        <span class="composition-number">08</span>
+                        <h2>Фрейминг</h2>
+                    </div>
+
+                    <p>
+                        Фрейминг — композиционный приём,
+                        при котором главный объект окружается
+                        естественной или искусственной рамкой
+                        внутри фотографии.
+                    </p>
+
+                    <p>
+                        В качестве такой рамки могут использоваться
+                        окна, дверные проёмы, арки, ветви деревьев
+                        и другие элементы окружающего пространства.
+                    </p>
+
+                    <p>
+                        Фрейминг помогает направить внимание
+                        на главный объект, добавить изображению
+                        глубину и создать ощущение,
+                        что зритель наблюдает сцену
+                        через определённое пространство.
+                    </p>
+
+                    <figure class="composition-figure">
+                        <img src="../images/composition/11.jpg"
+                             alt="Пример фрейминга"
+                             data-gallery="composition"
+                             data-caption="Фрейминг"
+                             loading="lazy">
+
+                        <figcaption>
+                            Естественная рамка внутри кадра
+                        </figcaption>
+                    </figure>
+
+                </article>
+
+                <!-- 09 СВЕТОВОЙ И ТОНАЛЬНЫЙ КОНТРАСТ -->
+
+                <article class="composition-block" id="contrast">
+
+                    <div class="composition-heading">
+                        <span class="composition-number">09</span>
+                        <h2>Световой и тональный контраст</h2>
+                    </div>
+
+                    <p>
+                        Контраст — различие между отдельными
+                        участками изображения по яркости,
+                        цвету или другим визуальным свойствам.
+                    </p>
+
+                    <p>
+                        Световой контраст возникает благодаря
+                        противопоставлению освещённых
+                        и затемнённых областей.
+                        Он помогает подчеркнуть форму объекта
+                        и привлечь к нему внимание.
+                    </p>
+
+                    <p>
+                        Тональный контраст связан с различиями
+                        между светлыми и тёмными оттенками.
+                        Например, светлый силуэт может отчётливо
+                        выделяться на тёмном фоне.
+                    </p>
+
+                    <p>
+                        Контрастные элементы часто становятся
+                        визуальными центрами композиции,
+                        поскольку взгляд зрителя
+                        естественным образом обращается к ним.
+                    </p>
+
+                    <figure class="composition-figure">
+                        <img src="../images/composition/12.jpg"
+                             alt="Пример светового и тонального контраста"
+                             data-gallery="composition"
+                             data-caption="Световой и тональный контраст"
+                             loading="lazy">
+
+                        <figcaption>
+                            Контраст помогает выделить
+                            главный объект фотографии
+                        </figcaption>
+                    </figure>
+
+                </article>
+
+                <!-- 10 ПАТТЕРНЫ -->
+
+                <article class="composition-block" id="patterns">
+
+                    <div class="composition-heading">
+                        <span class="composition-number">10</span>
+                        <h2>Паттерны</h2>
+                    </div>
+
+                    <p>
+                        Паттерн — повторяющийся визуальный элемент
+                        или закономерность, которая формирует
+                        определённый ритм внутри фотографии.
+                    </p>
+
+                    <p>
+                        Повторяться могут линии, геометрические
+                        фигуры, цвета, формы и текстуры.
+                        Такие закономерности встречаются
+                        в природе, архитектуре и предметной съёмке.
+                    </p>
+
+                    <p>
+                        Повторение создаёт ощущение порядка
+                        и единства изображения.
+                        Особенно выразительным становится кадр,
+                        в котором один элемент нарушает
+                        общий ритм и привлекает внимание.
+                    </p>
+
+                    <figure class="composition-figure">
+                        <img src="../images/composition/13.jpg"
+                             alt="Пример повторяющихся паттернов"
+                             data-gallery="composition"
+                             data-caption="Паттерны"
+                             loading="lazy">
+
+                        <figcaption>
+                            Повторение форм и линий в композиции
+                        </figcaption>
+                    </figure>
+
+                </article>
+
+                <!-- ПЕРЕХОД К ГАЛЕРЕЕ -->
+
+                <div class="composition-next">
+
+                    <p class="subtitle">Продолжить изучение</p>
+
+                    <h2>
+                        Посмотри примеры художественной фотографии
+                    </h2>
+
+                    <a href="gallery.html" class="button">
+                        Перейти в фотогалерею
+                    </a>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ПОДВАЛ -->
+
+    <footer class="footer">
+        <p>
+            Искусство фотографии · Образовательный проект
+        </p>
+    </footer>
+
+</body>
+</html>
