@@ -18,9 +18,43 @@
 <body>
 
 <header class="header">
-    <a href="index.html" class="logo">
-        Искусство фотографии
-    </a>
+    
+<a href="index.html" class="logo">
+
+            <span class="logo-icon" aria-hidden="true">
+
+                <svg viewBox="0 0 64 64"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+
+                    <!-- Контур листика -->
+                    <path
+                        d="M50 14C34 15 22 23 17 35C13 44 15 53 15 53C15 53 24 55 33 51C45 46 53 34 50 14Z"
+                        stroke="currentColor"
+                        stroke-width="3.2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+
+                    <!-- Прожилка листика -->
+                    <path
+                        d="M20 47C24 41 30 35 38 30C42 27 45 25 48 24"
+                        stroke="currentColor"
+                        stroke-width="3.2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+
+                </svg>
+
+            </span>
+
+            <span class="logo-text">
+                Искусство фотографии
+            </span>
+
+        </a>
+
 
     <nav class="nav" aria-label="Основная навигация">
         <a href="history.html">История</a>
@@ -47,13 +81,13 @@
             <p class="subtitle">Как создаётся фотография</p>
             <h1>Устройство фотоаппарата</h1>
 
-            <p class="camera-lead">
+            <blockquote class="genres-quote">
                 Современный фотоаппарат объединяет оптику,
                 электронику и механические компоненты.
                 Каждый из них участвует в создании изображения.
                 Исследуй устройство камеры и научись
                 управлять светом с помощью настроек съёмки.
-            </p>
+            </blockquote>
 
         </div>
     </section>
@@ -90,33 +124,6 @@
                 Справа появится объяснение её назначения.
                 На телефоне используй нажатие.
             </p>
-
-            <!-- ПЕРЕКЛЮЧАТЕЛЬ ВИДА -->
-
-            <div class="camera-view-buttons">
-
-                <button type="button"
-                        class="camera-view-button active"
-                        data-view="front"
-                        aria-pressed="true">
-                    Вид спереди
-                </button>
-
-                <button type="button"
-                        class="camera-view-button"
-                        data-view="back"
-                        aria-pressed="false">
-                    Вид сзади
-                </button>
-
-                <button type="button"
-                        class="camera-view-button"
-                        data-view="inside"
-                        aria-pressed="false">
-                    Внутреннее устройство
-                </button>
-
-            </div>
 
             <div class="camera-interactive-layout">
 
@@ -223,202 +230,6 @@
                                     style="--x:65%;--y:75%"
                                     data-part="zoom-ring"
                                     aria-label="Кольцо зума">+</button>
-
-                        </div>
-                    </div>
-
-                    <!-- ВИД СЗАДИ -->
-
-                    <div class="camera-view"
-                         data-camera-view="back"
-                         hidden>
-
-                        <div class="camera-illustration">
-
-                            <svg viewBox="0 0 600 400"
-                                 role="img"
-                                 aria-label="Схематичный вид фотоаппарата сзади">
-
-                                <rect x="88" y="99"
-                                      width="423" height="254"
-                                      rx="28" fill="#33483A"
-                                      stroke="#1A3025"
-                                      stroke-width="9"/>
-
-                                <path d="M228 100 L247 67
-                                         H357 L375 100"
-                                      fill="#33483A"
-                                      stroke="#1A3025"
-                                      stroke-width="8"/>
-
-                                <rect x="276" y="107"
-                                      width="48" height="30"
-                                      rx="7" fill="#0D211A"/>
-
-                                <rect x="139" y="145"
-                                      width="295" height="174"
-                                      rx="12" fill="#101D19"
-                                      stroke="#819588"
-                                      stroke-width="7"/>
-
-                                <rect x="150" y="156"
-                                      width="273" height="152"
-                                      rx="6" fill="#9BB9B2"/>
-
-                                <path d="M150 265 Q220 199 280 250
-                                         Q365 189 423 250
-                                         V308 H150 Z"
-                                      fill="#41684C"/>
-
-                                <path d="M150 286 Q249 237 340 275
-                                         Q390 258 423 279
-                                         V308 H150 Z"
-                                      fill="#243F32"/>
-
-                                <circle cx="468" cy="172" r="20"
-                                        fill="#1D3025"
-                                        stroke="#A0B1A0"
-                                        stroke-width="4"/>
-
-                                <circle cx="468" cy="255" r="27"
-                                        fill="#1D3025"
-                                        stroke="#A0B1A0"
-                                        stroke-width="5"/>
-
-                                <circle cx="468" cy="255" r="9"
-                                        fill="#92A895"/>
-
-                            </svg>
-
-                            <button class="camera-hotspot"
-                                    style="--x:48%;--y:30%"
-                                    data-part="viewfinder"
-                                    aria-label="Видоискатель">+</button>
-
-                            <button class="camera-hotspot"
-                                    style="--x:46%;--y:58%"
-                                    data-part="display"
-                                    aria-label="Дисплей">+</button>
-
-                            <button class="camera-hotspot"
-                                    style="--x:78%;--y:44%"
-                                    data-part="control-dial"
-                                    aria-label="Колесо управления">+</button>
-
-                            <button class="camera-hotspot"
-                                    style="--x:78%;--y:65%"
-                                    data-part="autofocus"
-                                    aria-label="Автофокус">+</button>
-
-                        </div>
-                    </div>
-
-                    <!-- ВНУТРЕННЕЕ УСТРОЙСТВО -->
-
-                    <div class="camera-view"
-                         data-camera-view="inside"
-                         hidden>
-
-                        <div class="camera-illustration">
-
-                            <svg viewBox="0 0 600 400"
-                                 role="img"
-                                 aria-label="Упрощённая схема внутренних компонентов фотоаппарата">
-
-                                <rect x="75" y="72"
-                                      width="455" height="270"
-                                      rx="22" fill="#D5DFD0"
-                                      stroke="#385646"
-                                      stroke-width="7"/>
-
-                                <path d="M125 140 H285"
-                                      stroke="#8EAE9D"
-                                      stroke-width="92"
-                                      stroke-linecap="round"/>
-
-                                <path d="M125 140 H285"
-                                      stroke="#29463B"
-                                      stroke-width="70"
-                                      stroke-linecap="round"/>
-
-                                <ellipse cx="150" cy="140"
-                                         rx="20" ry="47"
-                                         fill="#7AADA9"
-                                         stroke="#E5F3E8"
-                                         stroke-width="5"/>
-
-                                <ellipse cx="220" cy="140"
-                                         rx="13" ry="45"
-                                         fill="#527F84"
-                                         stroke="#D5F1E8"
-                                         stroke-width="4"/>
-
-                                <circle cx="286" cy="140" r="25"
-                                        fill="#795C46"
-                                        stroke="#D8C09D"
-                                        stroke-width="5"/>
-
-                                <rect x="345" y="94"
-                                      width="42" height="95"
-                                      rx="5" fill="#9AB88E"
-                                      stroke="#355448"
-                                      stroke-width="5"/>
-
-                                <rect x="430" y="111"
-                                      width="57" height="62"
-                                      rx="7" fill="#375F55"/>
-
-                                <rect x="345" y="228"
-                                      width="60" height="62"
-                                      rx="7" fill="#C8AF91"/>
-
-                                <rect x="436" y="229"
-                                      width="52" height="61"
-                                      rx="7" fill="#344B3F"/>
-
-                                <path d="M380 190 V222 M405 140 H430
-                                         M405 260 H430"
-                                      stroke="#795C46"
-                                      stroke-width="5"
-                                      stroke-dasharray="7 6"
-                                      fill="none"/>
-
-                            </svg>
-
-                            <button class="camera-hotspot"
-                                    style="--x:25%;--y:35%"
-                                    data-part="glass"
-                                    aria-label="Линзы">+</button>
-
-                            <button class="camera-hotspot"
-                                    style="--x:47%;--y:35%"
-                                    data-part="aperture"
-                                    aria-label="Диафрагма">+</button>
-
-                            <button class="camera-hotspot"
-                                    style="--x:61%;--y:27%"
-                                    data-part="sensor"
-                                    aria-label="Матрица">+</button>
-
-                            <button class="camera-hotspot"
-                                    style="--x:69%;--y:52%"
-                                    data-part="shutter"
-                                    aria-label="Затвор">+</button>
-
-                            <button class="camera-hotspot"
-                                    style="--x:77%;--y:36%"
-                                    data-part="processor"
-                                    aria-label="Процессор">+</button>
-
-                            <button class="camera-hotspot"
-                                    style="--x:63%;--y:65%"
-                                    data-part="battery"
-                                    aria-label="Аккумулятор">+</button>
-
-                            <button class="camera-hotspot"
-                                    style="--x:77%;--y:65%"
-                                    data-part="memory"
-                                    aria-label="Карта памяти">+</button>
 
                         </div>
                     </div>

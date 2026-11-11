@@ -216,41 +216,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     selectPart("lens");
 
-    /* ==================================
-       2. ПЕРЕКЛЮЧЕНИЕ ВИДА КАМЕРЫ
-    ================================== */
 
-    const viewButtons =
-        document.querySelectorAll(".camera-view-button");
-
-    const cameraViews =
-        document.querySelectorAll(".camera-view");
-
-    viewButtons.forEach(button => {
-
-        button.addEventListener("click", () => {
-
-            const selectedView = button.dataset.view;
-
-            viewButtons.forEach(btn => {
-                const active = btn === button;
-
-                btn.classList.toggle("active", active);
-                btn.setAttribute(
-                    "aria-pressed",
-                    String(active)
-                );
-            });
-
-            cameraViews.forEach(view => {
-                const active =
-                    view.dataset.cameraView === selectedView;
-
-                view.hidden = !active;
-                view.classList.toggle("active", active);
-            });
-        });
-    });
 
     /* ==================================
        3. ТРЕНАЖЁР ЭКСПОЗИЦИИ

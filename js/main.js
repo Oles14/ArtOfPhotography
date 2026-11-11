@@ -215,3 +215,94 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
+
+
+/* =========================================
+   КАСТОМИЗАЦИЯ: СВЕТЛАЯ И ТЁМНАЯ ТЕМА
+========================================= */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const root = document.documentElement;
+
+    // Восстанавливаем сохранённую тему
+    let savedTheme = "light";
+
+    try {
+        savedTheme = localStorage.getItem("photo-theme") || "light";
+    } catch (error) {
+        // Если сохранение недоступно,
+        // используется светлая тема
+    }
+
+    if (savedTheme !== "dark") {
+        savedTheme = "light";
+    }
+
+    root.setAttribute("data-theme", savedTheme);
+
+    // Находим шапку сайта
+    // Поддерживаются обе версии HTML
+    const header = document.querySelector(
+        ".site-header .header-inner, .header"
+    );
+
+    if (!header) return;
+
+    // Создаём кнопку переключения
+    const themeButton = document.createElement("button");
+
+    themeButton.type = "button";
+    themeButton.className = "theme-toggle";
+
+    // Добавляем кнопку в шапку
+    header.appendChild(themeButton);
+
+    // Обновление внешнего вида кнопки
+    function updateThemeButton() {
+
+        const isDark =
+            root.getAttribute("data-theme") === "dark";
+
+        themeButton.textContent = isDark
+            ? "☀ Светлая тема"
+            : "☾ Тёмная тема";
+
+        themeButton.setAttribute(
+            "aria-label",
+            isDark
+                ? "Включить светлую тему"
+                : "Включить тёмную тему"
+        );
+
+        themeButton.setAttribute(
+            "aria-pressed",
+            String(isDark)
+        );
+    }
+
+    // Переключение темы при нажатии
+    themeButton.addEventListener("click", () => {
+
+        const currentTheme =
+            root.getAttribute("data-theme");
+
+        const newTheme =
+            currentTheme === "dark" ? "light" : "dark";
+
+        root.setAttribute("data-theme", newTheme);
+
+        // Сохраняем выбор пользователя
+        try {
+            localStorage.setItem("photo-theme", newTheme);
+        } catch (error) {
+            // Переключение продолжает работать,
+            // даже если сохранение недоступно
+        }
+
+        updateThemeButton();
+    });
+
+    updateThemeButton();
+
+});
